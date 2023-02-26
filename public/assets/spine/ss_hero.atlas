@@ -1,0 +1,230 @@
+
+ss_hero.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/characters/mage_1/Witch_01
+  rotate: true
+  xy: 900, 88
+  size: 76, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_02
+  rotate: false
+  xy: 848, 166
+  size: 80, 88
+  orig: 220, 128
+  offset: 20, 24
+  index: -1
+images/characters/mage_1/Witch_03
+  rotate: false
+  xy: 1112, 10
+  size: 76, 88
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_04
+  rotate: true
+  xy: 940, 10
+  size: 76, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_05
+  rotate: false
+  xy: 480, 154
+  size: 96, 100
+  orig: 220, 128
+  offset: 16, 24
+  index: -1
+images/characters/mage_1/Witch_06
+  rotate: true
+  xy: 532, 52
+  size: 100, 96
+  orig: 220, 128
+  offset: 12, 24
+  index: -1
+images/characters/mage_1/Witch_07
+  rotate: false
+  xy: 378, 154
+  size: 100, 100
+  orig: 220, 128
+  offset: 12, 24
+  index: -1
+images/characters/mage_1/Witch_08
+  rotate: false
+  xy: 578, 154
+  size: 96, 100
+  orig: 220, 128
+  offset: 16, 24
+  index: -1
+images/characters/mage_1/Witch_09
+  rotate: false
+  xy: 430, 52
+  size: 100, 100
+  orig: 220, 128
+  offset: 12, 24
+  index: -1
+images/characters/mage_1/Witch_10
+  rotate: true
+  xy: 2, 4
+  size: 84, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_11
+  rotate: true
+  xy: 284, 138
+  size: 116, 92
+  orig: 220, 128
+  offset: 20, 24
+  index: -1
+images/characters/mage_1/Witch_12
+  rotate: true
+  xy: 336, 20
+  size: 116, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_13
+  rotate: true
+  xy: 96, 106
+  size: 148, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_14
+  rotate: true
+  xy: 2, 90
+  size: 164, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_15
+  rotate: false
+  xy: 676, 166
+  size: 84, 88
+  orig: 220, 128
+  offset: 20, 24
+  index: -1
+images/characters/mage_1/Witch_16
+  rotate: false
+  xy: 630, 60
+  size: 88, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_17
+  rotate: true
+  xy: 238, 8
+  size: 112, 96
+  orig: 220, 128
+  offset: 24, 20
+  index: -1
+images/characters/mage_1/Witch_18
+  rotate: true
+  xy: 190, 122
+  size: 132, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_19
+  rotate: false
+  xy: 96, 12
+  size: 140, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_20
+  rotate: false
+  xy: 720, 76
+  size: 84, 88
+  orig: 220, 128
+  offset: 20, 24
+  index: -1
+images/characters/mage_1/Witch_21
+  rotate: true
+  xy: 930, 178
+  size: 76, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_22
+  rotate: true
+  xy: 994, 100
+  size: 76, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_23
+  rotate: true
+  xy: 1024, 178
+  size: 76, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_24
+  rotate: false
+  xy: 1034, 6
+  size: 76, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_25
+  rotate: true
+  xy: 806, 84
+  size: 80, 92
+  orig: 220, 128
+  offset: 20, 24
+  index: -1
+images/characters/mage_1/Witch_26
+  rotate: true
+  xy: 1088, 100
+  size: 76, 92
+  orig: 220, 128
+  offset: 20, 24
+  index: -1
+images/characters/mage_1/Witch_27
+  rotate: true
+  xy: 1118, 178
+  size: 76, 92
+  orig: 220, 128
+  offset: 24, 24
+  index: -1
+images/characters/mage_1/Witch_28
+  rotate: false
+  xy: 762, 166
+  size: 84, 88
+  orig: 220, 128
+  offset: 28, 24
+  index: -1
+images/characters/mage_1/Witch_29
+  rotate: false
+  xy: 846, 2
+  size: 92, 80
+  orig: 220, 128
+  offset: 32, 24
+  index: -1
+images/characters/mage_1/Witch_30
+  rotate: false
+  xy: 740, 10
+  size: 104, 64
+  orig: 220, 128
+  offset: 40, 20
+  index: -1
+images/characters/mage_1/Witch_31
+  rotate: false
+  xy: 630, 2
+  size: 108, 56
+  orig: 220, 128
+  offset: 44, 20
+  index: -1
+images/characters/mage_1/Witch_32
+  rotate: false
+  xy: 1182, 124
+  size: 108, 52
+  orig: 220, 128
+  offset: 44, 20
+  index: -1

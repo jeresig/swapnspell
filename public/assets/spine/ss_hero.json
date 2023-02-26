@@ -1,0 +1,159 @@
+{
+"skeleton": {
+	"hash": "h1cNGfDGXfxbewpNMVYZBpyf1TU",
+	"spine": "3.8.99",
+	"x": -64.17,
+	"y": -28.05,
+	"width": 220,
+	"height": 128,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "hero_root", "parent": "root" }
+],
+"slots": [
+	{ "name": "images/characters/mage_1/Witch_01", "bone": "hero_root", "attachment": "images/characters/mage_1/Witch_01" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"images/characters/mage_1/Witch_01": {
+				"images/characters/mage_1/Witch_01": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_02": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_03": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_04": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_05": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_06": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_07": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_08": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_09": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_10": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_11": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_12": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_13": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_14": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_15": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_16": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_17": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_18": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_19": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_20": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_21": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_22": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_23": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_24": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_25": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_26": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_27": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_28": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_29": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_30": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_31": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_32": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 }
+			}
+		}
+	}
+],
+"animations": {
+	"attack_1": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_01" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_10" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_11" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_12" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_13" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_14" },
+					{ "time": 1, "name": "images/characters/mage_1/Witch_01" }
+				]
+			}
+		}
+	},
+	"attack_2": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_01" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_15" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_16" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_17" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_18" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_19" },
+					{ "time": 1, "name": "images/characters/mage_1/Witch_01" }
+				]
+			}
+		}
+	},
+	"attack_3": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_01" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_20" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_21" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_22" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_23" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_24" },
+					{ "time": 1, "name": "images/characters/mage_1/Witch_01" }
+				]
+			}
+		}
+	},
+	"death": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_28" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_29" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_30" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_31" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_32" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_32" }
+				]
+			}
+		}
+	},
+	"hit": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_26" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_27" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_27" }
+				]
+			}
+		}
+	},
+	"idle": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_01" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_02" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_03" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_04" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_01" }
+				]
+			}
+		}
+	},
+	"run": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_05" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_06" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_07" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_08" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_09" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_05" }
+				]
+			}
+		}
+	}
+}
+}
