@@ -17,10 +17,10 @@ if (window.__PIXI_INSPECTOR_GLOBAL_HOOK__) {
 
 (async function() {
     const sheets = {
-        spineTiles: await PIXI.Assets.load('../assets/spine/tiles.json'),
-        buttonCast: await PIXI.Assets.load('../assets/spine/button_cast.json'),
-        monster: await PIXI.Assets.load('../assets/spine/goblins.json'),
-        hero: await PIXI.Assets.load('../assets/spine/ss_hero.json'),
+        spineTiles: await PIXI.Assets.load('./assets/spine/tiles.json'),
+        buttonCast: await PIXI.Assets.load('./assets/spine/button_cast.json'),
+        monster: await PIXI.Assets.load('./assets/spine/goblins.json'),
+        hero: await PIXI.Assets.load('./assets/spine/ss_hero.json'),
     };
 
     const level = new Level({
