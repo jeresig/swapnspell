@@ -2,22 +2,40 @@ import * as PIXI from "pixi.js";
 import {Spine, SpineDebugRenderer} from 'pixi-spine';
 import {Skin} from '@pixi-spine/runtime-3.8';
 
-export default class Hero {
-    constructor(options) {
-        this.options = {
-            size: 50,
-            x: 0,
-            y: 0,
-            interactive: false,
-            ...options,
-        };
+type Options = {
+    size: number,
+    x: number,
+    y: number,
+    maxHealth: number,
+    container: PIXI.Container,
+    sheets: any,
+}
 
+export default class Hero {
+    options: Options;
+    skin: string;
+    maxHealth: number;
+    curHealth: number;
+    alive: boolean;
+    healthText: PIXI.Text;
+    hero: Spine;
+
+    constructor(options: Options) {
+        this.options = options;
         this.skin = "default";
         this.maxHealth = this.options.maxHealth;
         this.curHealth = this.maxHealth;
+        this.alive = true;
+
+        this.hero = new Spine(this.options.sheets.hero.spineData);
+        this.healthText = new PIXI.Text(`Health: ${this.curHealth}`, {
+            fontFamily: "Helvetica",
+            fontSize: 24,
+            fill: 0x00ff00,
+        });
     }
 
-    damage(num) {
+    damage(num: number) {
         const {container} = this.options;
 
         this.curHealth -= num;
@@ -27,28 +45,29 @@ export default class Hero {
 
         this.healthText.text = `Health: ${this.curHealth}/${this.maxHealth}`;
 
-        this.damageText = new PIXI.Text(`-${num}`, {
+        const damageText = new PIXI.Text(`-${num}`, {
             fontFamily: "Helvetica",
             fontSize: 24,
             fill: 0xff0000,
         });
-        this.damageText.x = 50;
-        this.damageText.y = 200;
-        this.damageText.alpha = 1;
-        container.addChild(this.damageText);
+        damageText.x = 50;
+        damageText.y = 200;
+        damageText.alpha = 1;
+        container.addChild(damageText);
 
         const duration = 333;
         const ticker = PIXI.Ticker.shared;
+        const frameRate = PIXI.settings.TARGET_FPMS || 0.06;
 
-        const onTick = (deltaTime) => {
-          const deltaMS = deltaTime / PIXI.settings.TARGET_FPMS;
+        const onTick = (deltaTime: number) => {
+          const deltaMS = deltaTime / frameRate;
 
           // increase the alpha proportionally
-          this.damageText.alpha -= deltaMS / duration;
+          damageText.alpha -= deltaMS / duration;
 
-          if (this.damageText.alpha >= 1) {
+          if (damageText.alpha >= 1) {
             ticker.remove(onTick);
-            container.removeChild(this.damageText);
+            container.removeChild(damageText);
           }
         };
 
@@ -68,7 +87,7 @@ export default class Hero {
 
     attack() {
         this.hero.state.setAnimation(0, 'attack_1', false);
-        this.hero.state.addAnimation(0, 'idle', true);
+        this.hero.state.addAnimation(0, 'idle', true, 0);
 
         return new Promise((resolve) => {
             setTimeout(resolve, 1000);
@@ -78,17 +97,12 @@ export default class Hero {
     render() {
         const {x, y, size, container, sheets} = this.options;
 
-        const hero = this.hero = new Spine(sheets.hero.spineData);
+        const hero = this.hero;
         //tile.debug = new SpineDebugRenderer();
         //tile.debug.drawDebug = true;
-        const {width, height, x: spineX, y: spineY} = hero.spineData;
+        const {width, height} = hero.spineData;
         hero.x = x + 30;
         hero.y = y + 100;
-        const ratio = 90 / height;
-        //hero.scale.x = ratio;
-        //hero.scale.y = ratio;
-        //hero.height = 165;
-        //hero.scaleX = -1;
 
         hero.skeleton.setSkinByName(this.skin);
         hero.skeleton.setSlotsToSetupPose();
@@ -96,26 +110,8 @@ export default class Hero {
 
         container.addChild(hero);
 
-        this.healthText = new PIXI.Text(`Health: ${this.curHealth}`, {
-            fontFamily: "Helvetica",
-            fontSize: 24,
-            fill: 0x00ff00,
-        });
         this.healthText.x = 0;
         this.healthText.y = 0;
         container.addChild(this.healthText);
-
-        /*
-        this.text = new PIXI.Text(`${curHealth}/${maxHealth}`, {
-            fontFamily: "Helvetica",
-            fontSize: 24,
-            fill: 0x00ff00,
-        });
-
-        this.text.x = x;
-        this.text.y = y - 24;
-
-        container.addChild(this.text);
-        */
     }
 }

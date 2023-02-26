@@ -1,29 +1,40 @@
 import * as PIXI from "pixi.js";
 
-import Monster from "./monster.js";
-import Hero from "./hero.js";
+import Monster from "./monster";
+import Hero from "./hero";
+import { LevelType, MonsterType, CastWord } from "./types";
+
+type Options = {
+    level: LevelType,
+    sheets: any,
+    x: number,
+    y: number,
+    width: number,
+    height: number,
+    health: number,
+    container: PIXI.Container,
+}
 
 export default class Battlefield {
-    constructor(options) {
-        this.options = {
-            monsters: [],
-            numMonsterSlots: 3,
-            onAttacked: (num) => {},
-            ...options,
-        };
+    options: Options;
+    monsterSlots: Array<Monster>;
+    hero: Hero;
 
-        const {sheets, gridHeight, gridWidth, numMonsterSlots, monsters, x, y, health} = this.options;
+    constructor(options: Options) {
+        this.options = options;
+
+        const {sheets, x, y, health, level: {numMonsterSlots, monsters}} = this.options;
 
         const battlefield = new PIXI.Container();
         battlefield.x = x;
         battlefield.y = y;
         this.options.container.addChild(battlefield);
 
-        const monsterSlots = this.monsterSlots = [];
+        const monsterSlots: Array<Monster> = this.monsterSlots = [];
 
         for (let h = 0; h < numMonsterSlots; h += 1) {
-            if (monsters.length > 0) {
-                const curMonster = monsters.pop();
+            const curMonster: MonsterType | undefined = monsters.pop();
+            if (curMonster) {
                 monsterSlots.push(new Monster({
                     container: battlefield,
                     sheets,
@@ -45,7 +56,7 @@ export default class Battlefield {
         });
     }
 
-    attack(foundWords) {
+    attack(foundWords: Array<CastWord>) {
         for (const word of foundWords) {
             if (word.dir === "horizontal") {
                 if (this.monsterSlots[word.y]) {

@@ -2,17 +2,35 @@ import * as PIXI from "pixi.js";
 import {Spine, SpineDebugRenderer} from 'pixi-spine';
 import {Skin} from '@pixi-spine/runtime-3.8';
 
+type Options = {
+    w: number,
+    h: number,
+    pos: number,
+    letter: string,
+    type: string,
+    onActivate: () => void,
+    sheets: any,
+    container: PIXI.Container,
+}
+
 export default class Tile {
-    constructor(options) {
-        this.options = {
-            size: 50,
-            x: 0,
-            y: 0,
-            interactive: true,
-            letter: "A",
-            type: "default",
-            ...options,
-        };
+    options: Options;
+    active: boolean;
+    isPartOfHorizontalWord: boolean;
+    isPartOfVerticalWord: boolean;
+    pos: number;
+    letter: string;
+    type: string;
+    castType: string;
+    touchDown: boolean;
+    swapping: boolean;
+    casting: boolean;
+    spawning: boolean;
+    posInWord: number;
+    tile: Spine;
+
+    constructor(options: Options) {
+        this.options = options;
 
         this.active = false;
         this.isPartOfHorizontalWord = false;
@@ -21,6 +39,13 @@ export default class Tile {
         this.letter = this.options.letter;
         this.type = this.options.type;
         this.castType = this.options.type;
+        this.touchDown = false;
+        this.swapping = false;
+        this.casting = false;
+        this.spawning = false;
+        this.posInWord = 0;
+
+        this.tile = new Spine(this.options.sheets.spineTiles.spineData);
     }
 
     handleTap = () => {
@@ -49,12 +74,21 @@ export default class Tile {
 
     setIsNotPartOfVerticalWord() {
         this.isPartOfVerticalWord = false;
-        //this.updateHighlight();
+        this.posInWord = 0;
+        this.castType = this.type;
+        if (!this.swapping) {
+            this.updateHighlight();
+        }
     }
 
-    setIsPartOfVerticalWord() {
+    setIsPartOfVerticalWord(pos: number, castType: string) {
         this.isPartOfVerticalWord = true;
-        //this.updateHighlight();
+        this.posInWord = pos;
+        this.castType = castType;
+        if (!this.swapping) {
+            this.updateHighlight();
+        }
+        this.updateSkin();
     }
 
     setIsNotPartOfHorizontalWord() {
@@ -66,7 +100,7 @@ export default class Tile {
         }
     }
 
-    setIsPartOfHorizontalWord(pos, castType) {
+    setIsPartOfHorizontalWord(pos: number, castType: string) {
         this.isPartOfHorizontalWord = true;
         this.posInWord = pos;
         this.castType = castType;
@@ -76,7 +110,7 @@ export default class Tile {
         this.updateSkin();
     }
 
-    swap(letter, type) {
+    swap(letter: string, type: string) {
         this.swapping = true;
         this.active = false;
         this.letter = letter;
@@ -91,7 +125,7 @@ export default class Tile {
         }, 400);
     }
 
-    cast(newLetter, type) {
+    cast(newLetter: string, type: string) {
         this.casting = true;
         this.letter = newLetter;
         this.updateHighlight();
@@ -115,7 +149,7 @@ export default class Tile {
         }, 233);
     }
 
-    setLetter(letter, type) {
+    setLetter(letter: string, type: string) {
         this.letter = letter;
         this.type = type;
         this.castType = type;
@@ -125,14 +159,27 @@ export default class Tile {
     updateSkin() {
         const {tile, type, castType, letter} = this;
         const newSkin = new Skin("combined-skin");
-        newSkin.addSkin(tile.spineData.findSkin(`tile_magic/tile_magic_${this.castType}`));
-        newSkin.addSkin(tile.spineData.findSkin(`colors/color_${this.type}`));
-        newSkin.addSkin(tile.spineData.findSkin(`letters/letter_${letter.toLowerCase()}`));
+        this.addSkin(newSkin, `tile_magic/tile_magic_${this.castType}`)
+        this.addSkin(newSkin, `colors/color_${this.type}`);
+        this.addSkin(newSkin, `letters/letter_${letter.toLowerCase()}`);
+        // @ts-ignore setSkin exists
         tile.skeleton.setSkin(newSkin);
         tile.skeleton.setSlotsToSetupPose();
     }
 
-    setAnimation(track, name, repeat) {
+    addSkin(skin: Skin, skinName: string) {
+        const {tile} = this;
+        const foundSkin = tile.spineData.findSkin(skinName);
+        if (foundSkin) {
+            // @ts-ignore This is ok
+            skin.addSkin(foundSkin);
+        } else {
+            console.error("Skin not found", skinName);
+        }
+    }
+
+    setAnimation(track: number, name: string, repeat: boolean) {
+        // @ts-ignore getCurrent exists
         const curIntAnimation = this.tile.state.getCurrent(track)?.animation?.name;
 
         if (curIntAnimation !== name) {
@@ -141,6 +188,7 @@ export default class Tile {
     }
 
     updateHighlight() {
+        // @ts-ignore getCurrent exists
         const curIntAnimation = this.tile.state.getCurrent(0)?.animation?.name;
 
         if (this.spawning) {
@@ -175,13 +223,12 @@ export default class Tile {
     }
 
     render() {
-        const {w, h, size, interactive, container, sheets} = this.options;
+        const {w, h, container, sheets} = this.options;
         const {letter, type} = this;
 
-        const tile = this.tile = new Spine(sheets.spineTiles.spineData);
+        const tile = this.tile;
         //tile.debug = new SpineDebugRenderer();
         //tile.debug.drawDebug = true;
-        const {width, height, x, y} = tile.spineData;
         tile.x = (w * 165) + (165/2);
         tile.y = (h * 165) + (165/2);
         tile.interactive = true;

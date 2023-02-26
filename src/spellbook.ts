@@ -2,30 +2,38 @@ import * as PIXI from "pixi.js";
 import {Spine, SpineDebugRenderer} from 'pixi-spine';
 import {Skin} from '@pixi-spine/runtime-3.8';
 
-import PackedTrie from "./ptrie.mjs";
-import PackedDict from "./dict.mjs";
-import Tile from "./tile.js";
-import {letterData} from "./config.js";
-import Monster from "./monster.js";
+import PackedTrie from "./ptrie";
+import PackedDict from "./dict";
+import Tile from "./tile";
+import {letterData} from "./config";
+import { CastWord, LevelType } from "./types";
 
+type Options = {
+    x: number,
+    y: number,
+    width: number,
+    height: number,
+    level: LevelType,
+    container: PIXI.Container,
+    sheets: any,
+    onCastSpell: (words: Array<CastWord>) => void,
+}
 export default class SpellBook {
-    constructor(options) {
-        this.options = {
-            gridWidth: 5,
-            gridHeight: 5,
-            spacing: 0,
-            x: 0,
-            y: 0,
-            width: 340,
-            height: 340,
-            horizontalWords: true,
-            verticalWords: false,
-            minWordSize: 3,
-            onCastSpell: (words) => {},
-            ...options,
-        };
+    options: Options;
+    container: PIXI.Container;
+    activeTile: Tile | null;
+    foundWords: Array<CastWord>;
+    dict: PackedTrie;
+    tiles: Array<Array<Tile>>;
+    _possibleLetters: Array<string> | undefined;
+    button: Spine;
 
-        const {x, y, width, height, gridWidth, gridHeight, spacing, container, sheets} = this.options;
+    constructor(options: Options) {
+        this.options = options;
+        this._possibleLetters = undefined;
+
+        const {x, y, width, height, container, sheets, level: {gridWidth, gridHeight}} = this.options;
+        const spacing = 0;
 
         const tileSize = width <= height ?
             Math.round((width - (spacing * (gridWidth - 1))) / gridWidth) :
@@ -44,7 +52,7 @@ export default class SpellBook {
 
         this.dict = new PackedTrie(PackedDict);
 
-        const tiles = this.tiles = [];
+        const tiles: Array<Array<Tile>> = this.tiles = [];
         let pos = 0;
 
         const tileContainer = new PIXI.Container();
@@ -58,21 +66,22 @@ export default class SpellBook {
             tiles[h] = [];
             for (let w = 0; w < gridWidth; w += 1) {
                 const [letter, type] = this.getNewLetter();
-                const tile = tiles[h][w] = new Tile({
+                tiles[h][w] = new Tile({
                     pos,
                     container: tileContainer,
                     sheets,
                     letter,
                     type,
-                    size: tileSize,
                     w,
                     h,
-                    onActivate: () => this.handleActivate(tile),
+                    onActivate: () => this.handleActivate(tiles[h][w]),
                 });
 
                 pos += 1;
             }
         }
+
+        this.button = new Spine(sheets.buttonCast.spineData);
     }
 
     getNewLetter() {
@@ -89,7 +98,8 @@ export default class SpellBook {
 
         const possibleLetters = [];
 
-        for (var letter in letterData.letters) {
+        for (var letter of Object.keys(letterData.letters)) {
+            // @ts-ignore
             var num = letterData.letters[letter];
 
             // We do this to make it easier to grab a random letter from a list
@@ -105,7 +115,7 @@ export default class SpellBook {
         return this._possibleLetters;
     }
 
-    handleActivate(tile) {
+    handleActivate(tile: Tile) {
         if (this.activeTile) {
             if (this.activeTile === tile) {
                 tile.setInactive();
@@ -119,7 +129,7 @@ export default class SpellBook {
         }
     }
 
-    swapTiles(tileA, tileB) {
+    swapTiles(tileA: Tile, tileB: Tile) {
         const {w: aW, h: aH} = this.getTileWH(tileA);
         const {w: bW, h: bH} = this.getTileWH(tileB);
         const aPos = tileA.pos;
@@ -141,7 +151,7 @@ export default class SpellBook {
     }
 
     resetFoundWords() {
-        const {gridHeight, gridWidth} = this.options;
+        const {level: {gridHeight, gridWidth}} = this.options;
 
         for (let h = 0; h < gridHeight; h += 1) {
             for (let w = 0; w < gridWidth; w += 1) {
@@ -154,7 +164,7 @@ export default class SpellBook {
     }
 
     findWords() {
-        const {gridHeight, gridWidth, verticalWords, horizontalWords, minWordSize} = this.options;
+        const {level: {gridHeight, gridWidth, verticalWords, horizontalWords, minWordSize}} = this.options;
         const {tiles, dict} = this;
 
         const numExistingWords = this.foundWords.length;
@@ -194,8 +204,14 @@ export default class SpellBook {
                                 x: w,
                                 y: h,
                             });
+                            let castType = "default";
                             for (let lh = h; lh < h + size; lh += 1) {
-                                tiles[lh][w].setIsPartOfVerticalWord(lh - h + 1);
+                                if (tiles[lh][w].type !== "default") {
+                                    castType = tiles[lh][w].type;
+                                }
+                            }
+                            for (let lh = h; lh < h + size; lh += 1) {
+                                tiles[lh][w].setIsPartOfVerticalWord(lh - h + 1, castType);
                             }
                         }
                     }
@@ -251,8 +267,8 @@ export default class SpellBook {
             }
         }
 
+        // @ts-ignore getCurrent exists!
         const curIntAnimation = this.button.state.getCurrent(0)?.animation?.name;
-        console.log(curIntAnimation)
 
         if (this.foundWords.length > 0) {
             if (curIntAnimation !== "button_cast_ready" && curIntAnimation !== "button_cast_idle_to_ready") {
@@ -261,16 +277,14 @@ export default class SpellBook {
                 } else {
                     this.button.state.setAnimation(0, 'button_cast_idle_to_ready', false);
                 }
-                this.button.state.addAnimation(0, 'button_cast_ready', true);
+                this.button.state.addAnimation(0, 'button_cast_ready', true, 0);
             }
             //this.button.interactive = true;
             //this.button.cursor = "pointer";
         } else if (this.foundWords.length === 0) {
-            console.log("no words")
             if (curIntAnimation === "button_cast_ready" || curIntAnimation === "button_cast_idle_to_ready" || curIntAnimation === "button_cast_activate") {
-                console.log("intermediary")
                 this.button.state.setAnimation(0, 'button_cast_to_pass', false);
-                this.button.state.addAnimation(0, 'button_pass_idle', true);
+                this.button.state.addAnimation(0, 'button_pass_idle', true, 0);
             } else {
                 this.button.state.setAnimation(0, 'button_pass_idle', true);
             }
@@ -279,10 +293,10 @@ export default class SpellBook {
         }
     }
 
-    getTileWH(tile) {
+    getTileWH(tile: Tile) {
         return {
-            w: tile.pos % this.options.gridWidth,
-            h: Math.floor(tile.pos / this.options.gridHeight),
+            w: tile.pos % this.options.level.gridWidth,
+            h: Math.floor(tile.pos / this.options.level.gridHeight),
         };
     }
 
@@ -300,7 +314,8 @@ export default class SpellBook {
             if (word.dir === "horizontal") {
                 for (let w = word.x; w < word.x + word.length; w += 1) {
                     setTimeout(() => {
-                        this.tiles[word.y][w].cast(...this.getNewLetter());
+                        const [letter, type] = this.getNewLetter();
+                        this.tiles[word.y][w].cast(letter, type);
                     }, stagger * (offset++));
                     setTimeout(() => {
                         this.tiles[word.y][w].spawn();
@@ -308,7 +323,8 @@ export default class SpellBook {
                 }
             } else {
                 for (let h = word.y; h < word.y + word.length; h += 1) {
-                    this.tiles[h][word.x].cast(...this.getNewLetter());
+                    const [letter, type] = this.getNewLetter();
+                    this.tiles[h][word.x].cast(letter, type);
                 }
             }
             setTimeout(() => {
@@ -318,7 +334,7 @@ export default class SpellBook {
     }
 
     handlePass() {
-        const {gridHeight, gridWidth} = this.options;
+        const {level: {gridHeight, gridWidth}} = this.options;
 
         this.button.state.setAnimation(0, 'button_pass_activate', false);
 
@@ -338,7 +354,8 @@ export default class SpellBook {
 
     render() {
         const {container} = this;
-        const {gridHeight, gridWidth, width, height, x, y, spacing, sheets} = this.options;
+        const {level: {gridHeight, gridWidth}, width, height, x, y, sheets} = this.options;
+
 
         for (let h = 0; h < gridHeight; h += 1) {
             for (let w = 0; w < gridWidth; w += 1) {
@@ -346,10 +363,9 @@ export default class SpellBook {
             }
         }
 
-        const button = this.button = new Spine(sheets.buttonCast.spineData);
+        const button = this.button;
         //tile.debug = new SpineDebugRenderer();
         //tile.debug.drawDebug = true;
-        const {width: spineWidth, height: spineHeight, x: spineX, y: spineY} = button.spineData;
 
         button.scale.x = 0.4;
         button.scale.y = 0.4;

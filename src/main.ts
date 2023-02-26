@@ -1,19 +1,17 @@
 import 'pixi-spine';
 import * as PIXI from "pixi.js";
-import {height, width, LEVELS} from "./config.js";
-import Level from "./level.js";
+
+import {width, height, LEVELS} from "./config";
+import Level from "./level";
 
 let app = new PIXI.Application({
     width,
     height,
     backgroundColor: 0x000000,
+    autoDensity: true,
 });
+// @ts-ignore this works fine
 document.body.appendChild(app.view);
-
-if (window.__PIXI_INSPECTOR_GLOBAL_HOOK__) {
-    console.log("Register", PIXI)
-    window.__PIXI_INSPECTOR_GLOBAL_HOOK__.register({ PIXI });
-}
 
 (async function() {
     const sheets = {
@@ -24,11 +22,12 @@ if (window.__PIXI_INSPECTOR_GLOBAL_HOOK__) {
     };
 
     const level = new Level({
-        ...LEVELS[0],
+        level: LEVELS[0],
         container: app.stage,
         sheets,
         width,
         height,
+        health: 50,
     });
 
     level.render();

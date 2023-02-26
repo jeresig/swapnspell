@@ -1,9 +1,10 @@
+import {LevelType} from "./types";
+
 export const width = 360;
 export const height = 780;
 
-export const LEVELS = [
+export const LEVELS: Array<LevelType> = [
     {
-        pointsRequired: 20,
         horizontalWords: true,
         verticalWords: false,
         gridWidth: 4,
@@ -17,28 +18,43 @@ export const LEVELS = [
         ],
     },
     {
-        pointsRequired: 40,
         horizontalWords: true,
         verticalWords: false,
         gridWidth: 4,
         gridHeight: 4,
         minWordSize: 3,
+        numMonsterSlots: 3,
+        monsters: [
+            {maxHealth: 10, curHealth: 10, alive: true, attack: () => 5},
+            {maxHealth: 20, curHealth: 20, alive: true, attack: () => 3},
+            {maxHealth: 30, curHealth: 30, alive: true, attack: () => 2},
+        ],
     },
     {
-        pointsRequired: 60,
         horizontalWords: true,
         verticalWords: false,
         gridWidth: 5,
         gridHeight: 4,
         minWordSize: 4,
+        numMonsterSlots: 3,
+        monsters: [
+            {maxHealth: 10, curHealth: 10, alive: true, attack: () => 5},
+            {maxHealth: 20, curHealth: 20, alive: true, attack: () => 3},
+            {maxHealth: 30, curHealth: 30, alive: true, attack: () => 2},
+        ],
     },
     {
-        pointsRequired: 80,
         horizontalWords: true,
         verticalWords: false,
         gridWidth: 4,
         gridHeight: 4,
         minWordSize: 4,
+        numMonsterSlots: 3,
+        monsters: [
+            {maxHealth: 10, curHealth: 10, alive: true, attack: () => 5},
+            {maxHealth: 20, curHealth: 20, alive: true, attack: () => 3},
+            {maxHealth: 30, curHealth: 30, alive: true, attack: () => 2},
+        ],
     },
 ];
 
