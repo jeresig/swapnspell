@@ -1,7 +1,7 @@
 import {LevelType} from "./types";
 
-export const width = 360;
-export const height = 780;
+export const width = window.innerWidth;
+export const height = window.innerHeight;
 
 export const LEVELS: Array<LevelType> = [
     {

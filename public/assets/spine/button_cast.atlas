@@ -1,327 +1,327 @@
 
 button_cast.png
-size: 2048,1024
+size: 4096,512
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 images/cast_button/cast_button_border
   rotate: false
-  xy: 1450, 408
+  xy: 1963, 103
   size: 558, 171
   orig: 616, 227
   offset: 29, 27
   index: -1
 images/cast_button/cast_button_default
   rotate: false
-  xy: 392, 272
+  xy: 1421, 72
   size: 540, 179
   orig: 616, 227
   offset: 38, 36
   index: -1
 images/cast_button/cast_button_glow
   rotate: false
-  xy: 1413, 2
+  xy: 558, 12
   size: 612, 223
   orig: 616, 227
   offset: 2, 2
   index: -1
 images/cast_button/cast_button_pressed
   rotate: false
-  xy: 2, 482
+  xy: 2269, 356
   size: 540, 154
   orig: 616, 227
   offset: 38, 36
   index: -1
 images/cast_button/cast_shimmer_1
   rotate: false
-  xy: 1393, 587
+  xy: 2656, 73
   size: 125, 125
   orig: 616, 227
   offset: 38, 90
   index: -1
 images/cast_button/cast_shimmer_2
-  rotate: false
-  xy: 1086, 436
+  rotate: true
+  xy: 1248, 68
   size: 180, 171
   orig: 616, 227
   offset: 38, 44
   index: -1
 images/cast_button/cast_shimmer_3
-  rotate: false
-  xy: 934, 255
+  rotate: true
+  xy: 907, 250
   size: 260, 179
   orig: 616, 227
   offset: 38, 36
   index: -1
 images/cast_button/cast_shimmer_4
-  rotate: false
-  xy: 1196, 227
+  rotate: true
+  xy: 2, 215
   size: 295, 179
   orig: 616, 227
   offset: 99, 36
   index: -1
 images/cast_button/cast_shimmer_5
-  rotate: false
-  xy: 1196, 227
+  rotate: true
+  xy: 2, 215
   size: 295, 179
   orig: 616, 227
   offset: 208, 36
   index: -1
 images/cast_button/cast_shimmer_6
-  rotate: false
-  xy: 1493, 227
+  rotate: true
+  xy: 545, 237
   size: 273, 179
   orig: 616, 227
   offset: 305, 36
   index: -1
 images/cast_button/cast_shimmer_7
-  rotate: false
-  xy: 2, 303
+  rotate: true
+  xy: 2, 20
   size: 193, 177
   orig: 616, 227
   offset: 385, 36
   index: -1
 images/cast_button/cast_shimmer_8
   rotate: false
-  xy: 1647, 581
+  xy: 3021, 379
   size: 131, 131
   orig: 616, 227
   offset: 447, 36
   index: -1
 images/cast_button/cast_side_effect_01
-  rotate: false
-  xy: 2, 742
+  rotate: true
+  xy: 1785, 265
   size: 64, 36
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_02
-  rotate: false
-  xy: 123, 722
+  rotate: true
+  xy: 1727, 265
   size: 64, 56
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_03
   rotate: true
-  xy: 294, 714
+  xy: 1641, 265
   size: 64, 84
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_04
   rotate: true
-  xy: 380, 714
+  xy: 1539, 265
   size: 64, 100
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_05
   rotate: true
-  xy: 482, 714
+  xy: 1425, 264
   size: 64, 112
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_06
   rotate: true
-  xy: 596, 714
+  xy: 1944, 6
   size: 64, 136
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_07
-  rotate: true
-  xy: 734, 714
+  rotate: false
+  xy: 426, 29
   size: 64, 184
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_08
   rotate: true
-  xy: 920, 714
+  xy: 1778, 6
   size: 64, 164
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_09
   rotate: true
-  xy: 1086, 714
+  xy: 1248, 2
   size: 64, 176
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_10
-  rotate: true
-  xy: 1264, 714
+  rotate: false
+  xy: 492, 29
   size: 64, 184
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_11
-  rotate: true
-  xy: 1450, 714
+  rotate: false
+  xy: 360, 21
   size: 64, 192
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_12
   rotate: true
-  xy: 1644, 714
+  xy: 1426, 6
   size: 64, 176
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_side_effect_13
   rotate: true
-  xy: 1822, 714
+  xy: 1604, 6
   size: 64, 172
   orig: 64, 192
   offset: 0, 0
   index: -1
 images/cast_button/cast_slice_1
   rotate: false
-  xy: 1520, 587
+  xy: 2783, 73
   size: 125, 125
   orig: 616, 227
   offset: 38, 90
   index: -1
 images/cast_button/cast_slice_2
-  rotate: false
-  xy: 1268, 414
+  rotate: true
+  xy: 1344, 330
   size: 180, 171
   orig: 616, 227
   offset: 38, 44
   index: -1
 images/cast_button/cast_slice_3
-  rotate: false
-  xy: 1768, 227
+  rotate: true
+  xy: 1088, 250
   size: 260, 179
   orig: 616, 227
   offset: 38, 36
   index: -1
 images/cast_button/cast_slice_4
-  rotate: false
-  xy: 2, 122
+  rotate: true
+  xy: 183, 215
   size: 295, 179
   orig: 616, 227
   offset: 99, 36
   index: -1
 images/cast_button/cast_slice_5
-  rotate: false
-  xy: 299, 91
+  rotate: true
+  xy: 364, 215
   size: 295, 179
   orig: 616, 227
   offset: 208, 36
   index: -1
 images/cast_button/cast_slice_6
-  rotate: false
-  xy: 596, 91
+  rotate: true
+  xy: 726, 237
   size: 273, 179
   orig: 616, 227
   offset: 305, 36
   index: -1
 images/cast_button/cast_slice_7
-  rotate: false
-  xy: 197, 303
+  rotate: true
+  xy: 181, 20
   size: 193, 177
   orig: 616, 227
   offset: 385, 36
   index: -1
 images/cast_button/cast_slice_8
   rotate: false
-  xy: 1780, 581
+  xy: 2523, 67
   size: 131, 131
   orig: 616, 227
   offset: 447, 36
   index: -1
 images/cast_button/cast_symbol_glow_1
   rotate: true
-  xy: 189, 721
+  xy: 1823, 272
   size: 57, 103
   orig: 58, 103
   offset: 1, 0
   index: -1
 images/cast_button/cast_symbol_glow_2
-  rotate: false
-  xy: 658, 609
+  rotate: true
+  xy: 2910, 94
   size: 104, 103
   orig: 105, 103
   offset: 1, 0
   index: -1
 images/cast_button/cast_symbol_glow_3
-  rotate: false
-  xy: 764, 609
+  rotate: true
+  xy: 2811, 357
   size: 153, 103
   orig: 154, 103
   offset: 1, 0
   index: -1
 images/cast_button/cast_symbol_glow_4
-  rotate: false
-  xy: 919, 609
+  rotate: true
+  xy: 2059, 347
   size: 163, 103
   orig: 163, 103
   offset: 0, 0
   index: -1
 images/cast_button/cast_symbol_glow_5
-  rotate: false
-  xy: 1084, 609
+  rotate: true
+  xy: 2164, 347
   size: 163, 103
   orig: 163, 103
   offset: 0, 0
   index: -1
 images/cast_button/cast_symbol_glow_6
-  rotate: false
-  xy: 1249, 609
+  rotate: true
+  xy: 2916, 368
   size: 142, 103
   orig: 142, 103
   offset: 0, 0
   index: -1
 images/cast_button/cast_symbol_glow_7
   rotate: false
-  xy: 2, 665
+  xy: 1344, 253
   size: 79, 75
   orig: 80, 77
   offset: 0, 2
   index: -1
 images/cast_button/cast_symbol_glow_8
-  rotate: true
-  xy: 68, 742
+  rotate: false
+  xy: 1928, 276
   size: 36, 53
   orig: 36, 56
   offset: 0, 0
   index: -1
 images/cast_button/cast_text
-  rotate: false
-  xy: 183, 639
+  rotate: true
+  xy: 1269, 262
   size: 248, 73
   orig: 248, 73
   offset: 0, 0
   index: -1
 images/cast_button/pass_button_default
   rotate: false
-  xy: 871, 46
+  xy: 1517, 331
   size: 540, 179
   orig: 616, 227
   offset: 38, 36
   index: -1
 images/cast_button/pass_button_pressed
   rotate: false
-  xy: 544, 453
+  xy: 2523, 200
   size: 540, 154
   orig: 616, 227
   offset: 38, 36
   index: -1
 images/cast_button/pass_icon
-  rotate: false
-  xy: 83, 640
+  rotate: true
+  xy: 2082, 3
   size: 98, 80
   orig: 98, 80
   offset: 0, 0
   index: -1
 images/cast_button/pass_text_2
-  rotate: false
-  xy: 433, 638
+  rotate: true
+  xy: 1172, 25
   size: 223, 74
   orig: 223, 74
   offset: 0, 0

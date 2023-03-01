@@ -1,5 +1,14 @@
 {
-"skeleton": { "hash": "dz2Ix2MLq2pjk3WBtsBLPoWHZr8", "spine": "3.8.99", "images": "", "audio": "" },
+"skeleton": {
+	"hash": "bVNjaWp6zF0P0JLCv+VgcZble9k",
+	"spine": "3.8.99",
+	"x": -82.5,
+	"y": -82.5,
+	"width": 165,
+	"height": 165,
+	"images": "",
+	"audio": ""
+},
 "bones": [
 	{ "name": "root" },
 	{ "name": "tile_base", "parent": "root" },
@@ -111,6 +120,36 @@
 				"tile_base_6": { "name": "images/tiles/default/tile_default_6", "width": 165, "height": 165 },
 				"tile_base_7": { "name": "images/tiles/default/tile_default_7", "width": 165, "height": 165 },
 				"tile_base_8": { "name": "images/tiles/default/tile_default_8", "width": 165, "height": 165 }
+			}
+		}
+	},
+	{
+		"name": "colors/color_green",
+		"attachments": {
+			"tile_base": {
+				"tile_base_1": { "name": "images/tiles/green/tile_green_1", "width": 165, "height": 165 },
+				"tile_base_2": { "name": "images/tiles/green/tile_green_2", "width": 165, "height": 165 },
+				"tile_base_3": { "name": "images/tiles/green/tile_green_3", "width": 165, "height": 165 },
+				"tile_base_4": { "name": "images/tiles/green/tile_green_4", "width": 165, "height": 165 },
+				"tile_base_5": { "name": "images/tiles/green/tile_green_5", "width": 165, "height": 165 },
+				"tile_base_6": { "name": "images/tiles/green/tile_green_6", "width": 165, "height": 165 },
+				"tile_base_7": { "name": "images/tiles/green/tile_green_7", "width": 165, "height": 165 },
+				"tile_base_8": { "name": "images/tiles/green/tile_green_8", "width": 165, "height": 165 }
+			}
+		}
+	},
+	{
+		"name": "colors/color_red",
+		"attachments": {
+			"tile_base": {
+				"tile_base_1": { "name": "images/tiles/red/tile_red_1", "width": 165, "height": 165 },
+				"tile_base_2": { "name": "images/tiles/red/tile_red_2", "width": 165, "height": 165 },
+				"tile_base_3": { "name": "images/tiles/red/tile_red_3", "width": 165, "height": 165 },
+				"tile_base_4": { "name": "images/tiles/red/tile_red_4", "width": 165, "height": 165 },
+				"tile_base_5": { "name": "images/tiles/red/tile_red_5", "width": 165, "height": 165 },
+				"tile_base_6": { "name": "images/tiles/red/tile_red_6", "width": 165, "height": 165 },
+				"tile_base_7": { "name": "images/tiles/red/tile_red_7", "width": 165, "height": 165 },
+				"tile_base_8": { "name": "images/tiles/red/tile_red_8", "width": 165, "height": 165 }
 			}
 		}
 	},

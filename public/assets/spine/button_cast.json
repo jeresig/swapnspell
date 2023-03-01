@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "d0M3mELUbkTsha0Hw6YGIscHtow", "spine": "3.8.99", "images": "", "audio": "" },
+"skeleton": { "hash": "reUPqFoIlAnZ5oesAAQ2fJzpdxQ", "spine": "3.8.99", "images": "", "audio": "" },
 "bones": [
 	{ "name": "root" },
 	{ "name": "cast_base", "parent": "root" },
@@ -404,7 +404,7 @@
 			},
 			"images/cast_button/cast_text": {
 				"color": [
-					{ "color": "e57607ff" }
+					{ "color": "e57507ff" }
 				],
 				"attachment": [
 					{ "name": "images/cast_button/cast_text" }
@@ -650,10 +650,11 @@
 			},
 			"images/cast_button/cast_text": {
 				"color": [
-					{ "time": 0.1, "color": "ffffffff" },
-					{ "time": 0.2333, "color": "ffffff00", "curve": 0.485, "c4": 0.59 },
+					{ "color": "e57507ff", "curve": "stepped" },
+					{ "time": 0.1, "color": "e57507ff" },
+					{ "time": 0.2333, "color": "e5750700", "curve": 0.485, "c4": 0.59 },
 					{ "time": 0.4, "color": "0092ad00", "curve": 0.317, "c2": 0.33, "c3": 0.667, "c4": 0.67 },
-					{ "time": 0.6, "color": "0093adff" }
+					{ "time": 0.6, "color": "0092adff" }
 				],
 				"attachment": [
 					{ "name": "images/cast_button/cast_text" },
@@ -886,6 +887,73 @@
 			"images/cast_button/cast_text": {
 				"color": [
 					{ "color": "0093adff" }
+				],
+				"attachment": [
+					{ "name": "images/cast_button/pass_text_2" }
+				]
+			},
+			"side_magic_left": {
+				"color": [
+					{ "color": "7be5ffff" }
+				],
+				"attachment": [
+					{ "name": "images/cast_button/pass_icon" }
+				]
+			},
+			"side_magic_left2": {
+				"color": [
+					{ "color": "7be5ffff" }
+				],
+				"attachment": [
+					{ "name": "images/cast_button/pass_icon2" }
+				]
+			}
+		},
+		"bones": {
+			"main": {
+				"translate": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			},
+			"cast_text": {
+				"translate": [
+					{ "y": 25.66 }
+				],
+				"scale": [
+					{}
+				]
+			},
+			"big_glow": {
+				"translate": [
+					{ "y": 14.69 }
+				],
+				"scale": [
+					{ "x": 0.933 }
+				]
+			}
+		}
+	},
+	"button_pass_ready": {
+		"slots": {
+			"big_glow": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "images/cast_button/cast_button_glow" }
+				]
+			},
+			"images/cast_button/cast_button_default": {
+				"attachment": [
+					{ "name": "images/cast_button/pass_button_default" }
+				]
+			},
+			"images/cast_button/cast_text": {
+				"color": [
+					{ "color": "0092adff" }
 				],
 				"attachment": [
 					{ "name": "images/cast_button/pass_text_2" }

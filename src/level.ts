@@ -1,10 +1,12 @@
 import * as PIXI from "pixi.js";
+import {Spine, SpineDebugRenderer} from 'pixi-spine';
 
 import Battlefield from "./battlefield";
 import SpellBook from "./spellbook";
 import {CastWord, LevelType} from "./types";
 
 type Options = {
+    root: PIXI.Container,
     level: LevelType,
     health: number,
     width: number,
@@ -14,6 +16,7 @@ type Options = {
 }
 
 export default class Level {
+    container: PIXI.Container;
     options: Options;
     battlefield: Battlefield;
     spellBook: SpellBook;
@@ -21,10 +24,32 @@ export default class Level {
     constructor(options: Options) {
         this.options = options;
 
-        const container = new PIXI.Container();
+        const container = this.container = new PIXI.Container();
         container.x = 0;
         container.y = 0;
         this.options.container.addChild(container);
+
+        const {sheets, width, height, root} = this.options;
+        const background = new Spine(sheets.background.spineData);
+
+        //tile.debug = new SpineDebugRenderer();
+        //tile.debug.drawDebug = true;
+        const {width: bgWidth, height: bgHeight} = background.spineData;
+        background.x = width / 2;
+        background.y = height / 2;
+        const wRatio = width / bgWidth;
+        const hRatio = height / bgHeight;
+        const ratio = Math.max(wRatio, hRatio);
+        background.scale.x = ratio;
+        background.scale.y = ratio;
+        //monster.height = 165;
+        //monster.scaleX = -1;
+
+        background.skeleton.setSkinByName('default');
+        background.skeleton.setSlotsToSetupPose();
+        background.state.setAnimation(0, 'world_bg_1_1', true);
+
+        this.container.addChild(background);
 
         this.battlefield = new Battlefield({
             container,
@@ -38,6 +63,7 @@ export default class Level {
         });
 
         this.spellBook = new SpellBook({
+            root,
             container,
             sheets: this.options.sheets,
             width: this.options.width,

@@ -1,0 +1,188 @@
+
+book_ui.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/ui/I
+  rotate: false
+  xy: 612, 83
+  size: 28, 84
+  orig: 28, 84
+  offset: 0, 0
+  index: -1
+images/ui/II
+  rotate: true
+  xy: 188, 2
+  size: 59, 84
+  orig: 59, 84
+  offset: 0, 0
+  index: -1
+images/ui/III
+  rotate: false
+  xy: 188, 63
+  size: 93, 84
+  orig: 93, 84
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_01
+  rotate: true
+  xy: 964, 50
+  size: 64, 36
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_02
+  rotate: true
+  xy: 962, 238
+  size: 64, 56
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_03
+  rotate: false
+  xy: 908, 116
+  size: 64, 84
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_04
+  rotate: false
+  xy: 896, 202
+  size: 64, 100
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_05
+  rotate: true
+  xy: 794, 103
+  size: 64, 112
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_06
+  rotate: false
+  xy: 546, 31
+  size: 64, 136
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_07
+  rotate: true
+  xy: 2, 83
+  size: 64, 184
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_08
+  rotate: false
+  xy: 480, 3
+  size: 64, 164
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_09
+  rotate: true
+  xy: 283, 37
+  size: 64, 176
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_10
+  rotate: true
+  xy: 2, 17
+  size: 64, 184
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_11
+  rotate: true
+  xy: 286, 103
+  size: 64, 192
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_12
+  rotate: true
+  xy: 612, 17
+  size: 64, 176
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/green_effect_13
+  rotate: true
+  xy: 790, 21
+  size: 64, 172
+  orig: 64, 192
+  offset: 0, 0
+  index: -1
+images/ui/icon_heart_1
+  rotate: true
+  xy: 2, 149
+  size: 160, 140
+  orig: 160, 160
+  offset: 0, 10
+  index: -1
+images/ui/icon_heart_2
+  rotate: false
+  xy: 286, 169
+  size: 120, 140
+  orig: 160, 160
+  offset: 20, 10
+  index: -1
+images/ui/icon_heart_3
+  rotate: false
+  xy: 794, 169
+  size: 100, 140
+  orig: 160, 160
+  offset: 30, 10
+  index: -1
+images/ui/icon_heart_4
+  rotate: false
+  xy: 408, 169
+  size: 120, 140
+  orig: 160, 160
+  offset: 20, 10
+  index: -1
+images/ui/icon_heart_5
+  rotate: true
+  xy: 144, 149
+  size: 160, 140
+  orig: 160, 160
+  offset: 0, 10
+  index: -1
+images/ui/icon_heart_6
+  rotate: false
+  xy: 530, 169
+  size: 120, 140
+  orig: 160, 160
+  offset: 20, 10
+  index: -1
+images/ui/icon_heart_7
+  rotate: true
+  xy: 652, 87
+  size: 100, 140
+  orig: 160, 160
+  offset: 30, 10
+  index: -1
+images/ui/icon_heart_8
+  rotate: true
+  xy: 652, 189
+  size: 120, 140
+  orig: 160, 160
+  offset: 20, 10
+  index: -1
+images/ui/icon_heart_glow
+  rotate: true
+  xy: 910, 304
+  size: 204, 183
+  orig: 204, 184
+  offset: 0, 1
+  index: -1
+images/ui/lane_hilite
+  rotate: false
+  xy: 2, 311
+  size: 906, 197
+  orig: 910, 197
+  offset: 4, 0
+  index: -1

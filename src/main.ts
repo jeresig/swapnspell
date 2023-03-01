@@ -19,9 +19,11 @@ document.body.appendChild(app.view);
         buttonCast: await PIXI.Assets.load('./assets/spine/button_cast.json'),
         monster: await PIXI.Assets.load('./assets/spine/goblins.json'),
         hero: await PIXI.Assets.load('./assets/spine/ss_hero.json'),
+        background: await PIXI.Assets.load('./assets/spine/world_backgrounds.json')
     };
 
     const level = new Level({
+        root: app.stage,
         level: LEVELS[0],
         container: app.stage,
         sheets,

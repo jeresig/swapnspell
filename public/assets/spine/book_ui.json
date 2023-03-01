@@ -1,0 +1,446 @@
+{
+"skeleton": { "hash": "+V/Un8Dkfq1A9nOENlbm8ThnGtk", "spine": "3.8.99", "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "book_ui_main", "parent": "root" },
+	{ "name": "lane_icon", "parent": "root", "x": 463.81 }
+],
+"slots": [
+	{ "name": "images/ui/book_back", "bone": "book_ui_main" },
+	{ "name": "images/ui/main_screen_mock_2", "bone": "root" },
+	{ "name": "images/ui/lane_hilite", "bone": "book_ui_main", "color": "fce4921d", "blend": "additive" },
+	{ "name": "images/ui/lane_icon", "bone": "lane_icon" },
+	{ "name": "images/ui/heal_effect", "bone": "book_ui_main" },
+	{ "name": "images/ui/icon_heart_1", "bone": "book_ui_main" },
+	{ "name": "images/ui/icon_heart_glow", "bone": "book_ui_main", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"images/ui/heal_effect": {
+				"images/ui/green_effect_01": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_02": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_03": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_04": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_05": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_06": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_07": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_08": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_09": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_10": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_11": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_12": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				},
+				"images/ui/green_effect_13": {
+					"x": 157.14,
+					"y": -10.15,
+					"scaleX": 1.8428,
+					"scaleY": 1.595,
+					"rotation": -90,
+					"width": 64,
+					"height": 192
+				}
+			},
+			"images/ui/icon_heart_1": {
+				"images/ui/icon_heart_1": { "width": 160, "height": 160 },
+				"images/ui/icon_heart_2": { "width": 160, "height": 160 },
+				"images/ui/icon_heart_3": { "width": 160, "height": 160 },
+				"images/ui/icon_heart_4": { "width": 160, "height": 160 },
+				"images/ui/icon_heart_5": { "width": 160, "height": 160 },
+				"images/ui/icon_heart_6": { "width": 160, "height": 160 },
+				"images/ui/icon_heart_7": { "width": 160, "height": 160 },
+				"images/ui/icon_heart_8": { "width": 160, "height": 160 }
+			},
+			"images/ui/icon_heart_glow": {
+				"images/ui/icon_heart_glow": { "width": 204, "height": 184 }
+			},
+			"images/ui/lane_hilite": {
+				"images/ui/lane_hilite": { "x": 147.78, "y": 0.5, "width": 910, "height": 197 }
+			}
+		}
+	},
+	{
+		"name": "lane_1",
+		"attachments": {
+			"images/ui/lane_icon": {
+				"images/ui/lane_icon": { "name": "images/ui/I", "width": 28, "height": 84 }
+			}
+		}
+	},
+	{
+		"name": "lane_2",
+		"attachments": {
+			"images/ui/lane_icon": {
+				"images/ui/lane_icon": { "name": "images/ui/II", "width": 59, "height": 84 }
+			}
+		}
+	},
+	{
+		"name": "lane_3",
+		"attachments": {
+			"images/ui/lane_icon": {
+				"images/ui/lane_icon": { "name": "images/ui/III", "width": 93, "height": 84 }
+			}
+		}
+	}
+],
+"animations": {
+	"health_icon_enter": {
+		"slots": {
+			"images/ui/icon_heart_1": {
+				"color": [
+					{ "color": "ffffff30" },
+					{ "time": 0.1333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "images/ui/icon_heart_2" },
+					{ "time": 0.0667, "name": "images/ui/icon_heart_3" },
+					{ "time": 0.1333, "name": "images/ui/icon_heart_4" },
+					{ "time": 0.2, "name": "images/ui/icon_heart_5" },
+					{ "time": 0.2667, "name": "images/ui/icon_heart_6" },
+					{ "time": 0.3333, "name": "images/ui/icon_heart_7" },
+					{ "time": 0.4, "name": "images/ui/icon_heart_8" },
+					{ "time": 0.4667, "name": "images/ui/icon_heart_1" }
+				]
+			},
+			"images/ui/icon_heart_glow": {
+				"color": [
+					{ "time": 0.4333, "color": "fb2e7600", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4667, "color": "fb2e768d", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5667, "color": "fb2e7600" }
+				],
+				"attachment": [
+					{ "time": 0.4333, "name": "images/ui/icon_heart_glow" }
+				]
+			}
+		},
+		"bones": {
+			"book_ui_main": {
+				"scale": [
+					{ "x": 0.43, "y": 0.43, "curve": 0, "c2": 0.02, "c3": 0.481 },
+					{ "time": 0.2333, "x": 1.359, "y": 1.359, "curve": 0.523, "c4": 0.96 },
+					{ "time": 0.4667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 1.185, "y": 0.864, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5667 }
+				]
+			}
+		}
+	},
+	"health_icon_heal": {
+		"slots": {
+			"images/ui/heal_effect": {
+				"attachment": [
+					{ "time": 0.3667, "name": "images/ui/green_effect_01" },
+					{ "time": 0.4333, "name": "images/ui/green_effect_02" },
+					{ "time": 0.5, "name": "images/ui/green_effect_03" },
+					{ "time": 0.5667, "name": "images/ui/green_effect_04" },
+					{ "time": 0.6333, "name": "images/ui/green_effect_05" },
+					{ "time": 0.7, "name": "images/ui/green_effect_06" },
+					{ "time": 0.7667, "name": "images/ui/green_effect_07" },
+					{ "time": 0.8333, "name": "images/ui/green_effect_08" },
+					{ "time": 0.9, "name": "images/ui/green_effect_09" },
+					{ "time": 0.9667, "name": "images/ui/green_effect_10" },
+					{ "time": 1.0333, "name": "images/ui/green_effect_11" },
+					{ "time": 1.1, "name": "images/ui/green_effect_12" },
+					{ "time": 1.1667, "name": "images/ui/green_effect_13" },
+					{ "time": 1.2333, "name": null }
+				]
+			},
+			"images/ui/icon_heart_1": {
+				"attachment": [
+					{ "name": "images/ui/icon_heart_1" }
+				]
+			},
+			"images/ui/icon_heart_glow": {
+				"color": [
+					{ "time": 0.3667, "color": "39ff0000", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4333, "color": "38ff0096", "curve": "stepped" },
+					{ "time": 0.9667, "color": "38ff0096", "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "color": "37ff0000" }
+				],
+				"attachment": [
+					{ "time": 0.3667, "name": "images/ui/icon_heart_glow" }
+				]
+			}
+		},
+		"bones": {
+			"book_ui_main": {
+				"scale": [
+					{},
+					{ "time": 0.0667, "x": 1.093, "y": 0.876 },
+					{ "time": 0.1 },
+					{ "time": 0.2667, "x": 1.201, "y": 1.201, "curve": 0.519, "c4": 0.95 },
+					{ "time": 0.4, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4333, "x": 1.185, "y": 0.864, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5 }
+				]
+			}
+		}
+	},
+	"health_icon_hit": {
+		"slots": {
+			"images/ui/icon_heart_1": {
+				"attachment": [
+					{ "name": "images/ui/icon_heart_1" }
+				]
+			},
+			"images/ui/icon_heart_glow": {
+				"color": [
+					{ "color": "ff070700" },
+					{ "time": 0.0667, "color": "ff060681", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ff060681" },
+					{ "time": 0.2667, "color": "ff070700" }
+				],
+				"attachment": [
+					{ "name": "images/ui/icon_heart_glow" }
+				]
+			}
+		},
+		"bones": {
+			"book_ui_main": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333, "x": -8.1, "y": -10.12, "curve": "stepped" },
+					{ "time": 0.0667, "x": 9.61, "y": 10.12, "curve": "stepped" },
+					{ "time": 0.1, "x": -9.61, "y": 9.11, "curve": "stepped" },
+					{ "time": 0.1333, "x": 7.08, "y": -6.58, "curve": "stepped" },
+					{ "time": 0.1667, "x": -8.1, "y": -5.57, "curve": "stepped" },
+					{ "time": 0.2, "x": 1.01, "y": 7.08, "curve": "stepped" },
+					{ "time": 0.2333 }
+				],
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"health_icon_idle": {
+		"slots": {
+			"images/ui/icon_heart_1": {
+				"attachment": [
+					{ "name": "images/ui/icon_heart_1" }
+				]
+			}
+		},
+		"bones": {
+			"book_ui_main": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"lane_bottom_cast": {
+		"slots": {
+			"images/ui/lane_hilite": {
+				"color": [
+					{ "color": "f0e09a1a", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2333, "color": "f0e0992f", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "color": "f0e09a1a" }
+				],
+				"attachment": [
+					{ "name": "images/ui/lane_hilite" }
+				]
+			},
+			"images/ui/lane_icon": {
+				"color": [
+					{ "color": "d3a375ff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2333, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "color": "d3a375ff" }
+				],
+				"attachment": [
+					{ "name": "images/ui/lane_icon" }
+				]
+			}
+		},
+		"bones": {
+			"lane_icon": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"lane_bottom_idle": {
+		"slots": {
+			"images/ui/lane_hilite": {
+				"color": [
+					{ "color": "fce89219" }
+				],
+				"attachment": [
+					{ "name": "images/ui/lane_hilite" }
+				]
+			},
+			"images/ui/lane_icon": {
+				"color": [
+					{ "color": "d3a375ff" }
+				],
+				"attachment": [
+					{ "name": "images/ui/lane_icon" }
+				]
+			}
+		},
+		"bones": {
+			"lane_icon": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"lane_top_cast": {
+		"slots": {
+			"images/ui/lane_hilite": {
+				"color": [
+					{ "color": "fce37b37", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2333, "color": "fce37b5c", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "color": "fce37b37" }
+				],
+				"attachment": [
+					{ "name": "images/ui/lane_hilite" }
+				]
+			},
+			"images/ui/lane_icon": {
+				"color": [
+					{ "color": "653507a7", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2333, "color": "ffffffe4", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "color": "653507a7" }
+				],
+				"attachment": [
+					{ "name": "images/ui/lane_icon" }
+				]
+			}
+		},
+		"bones": {
+			"lane_icon": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"lane_top_idle": {
+		"slots": {
+			"images/ui/lane_hilite": {
+				"color": [
+					{ "color": "fce37b37" }
+				],
+				"attachment": [
+					{ "name": "images/ui/lane_hilite" }
+				]
+			},
+			"images/ui/lane_icon": {
+				"color": [
+					{ "color": "653507a7" }
+				],
+				"attachment": [
+					{ "name": "images/ui/lane_icon" }
+				]
+			}
+		},
+		"bones": {
+			"lane_icon": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

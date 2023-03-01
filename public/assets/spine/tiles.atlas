@@ -1,664 +1,776 @@
 
 tiles.png
-size: 2048,1024
+size: 4096,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 images/tiles/blue/tile_blue_1
   rotate: false
-  xy: 1006, 101
+  xy: 777, 9
   size: 145, 145
   orig: 165, 165
   offset: 10, 10
   index: -1
 images/tiles/blue/tile_blue_2
   rotate: true
-  xy: 1597, 915
+  xy: 1309, 402
   size: 105, 145
   orig: 165, 165
   offset: 30, 10
   index: -1
 images/tiles/blue/tile_blue_3
   rotate: true
-  xy: 1006, 16
+  xy: 1483, 19
   size: 83, 145
   orig: 165, 165
   offset: 41, 10
   index: -1
 images/tiles/blue/tile_blue_4
-  rotate: true
-  xy: 1300, 26
+  rotate: false
+  xy: 1690, 112
   size: 105, 145
   orig: 165, 165
   offset: 30, 10
   index: -1
 images/tiles/blue/tile_blue_5
   rotate: false
-  xy: 1088, 320
+  xy: 924, 9
   size: 145, 145
   orig: 165, 165
   offset: 10, 10
   index: -1
 images/tiles/blue/tile_blue_6
   rotate: true
-  xy: 1436, 162
+  xy: 1777, 5
   size: 105, 145
   orig: 165, 165
   offset: 30, 10
   index: -1
 images/tiles/blue/tile_blue_7
   rotate: true
-  xy: 1153, 21
+  xy: 1630, 23
   size: 83, 145
   orig: 165, 165
   offset: 41, 10
   index: -1
 images/tiles/blue/tile_blue_8
-  rotate: true
-  xy: 1442, 301
+  rotate: false
+  xy: 1482, 730
   size: 105, 145
   orig: 165, 165
   offset: 30, 10
   index: -1
 images/tiles/default/active_word_glow_blue
   rotate: false
-  xy: 1169, 501
+  xy: 1237, 509
   size: 145, 145
   orig: 300, 300
   offset: 77, 78
   index: -1
 images/tiles/default/active_word_glow_green
   rotate: false
-  xy: 1153, 106
+  xy: 1335, 700
   size: 145, 145
   orig: 300, 300
   offset: 77, 78
   index: -1
 images/tiles/default/active_word_glow_red
   rotate: false
-  xy: 1235, 354
+  xy: 1386, 877
   size: 145, 145
   orig: 300, 300
   offset: 77, 78
   index: -1
 images/tiles/default/active_word_glow_yellow
   rotate: false
-  xy: 1316, 555
+  xy: 1249, 73
   size: 145, 145
   orig: 300, 300
   offset: 77, 78
   index: -1
 images/tiles/default/tile_default_1
   rotate: false
-  xy: 1382, 408
+  xy: 1262, 251
   size: 145, 145
   orig: 165, 165
   offset: 10, 10
   index: -1
 images/tiles/default/tile_default_2
   rotate: false
-  xy: 1447, 15
+  xy: 1533, 877
   size: 105, 145
   orig: 165, 165
   offset: 30, 10
   index: -1
 images/tiles/default/tile_default_3
-  rotate: true
-  xy: 1295, 269
+  rotate: false
+  xy: 1854, 877
   size: 83, 145
   orig: 165, 165
   offset: 41, 10
   index: -1
 images/tiles/default/tile_default_4
   rotate: false
-  xy: 1554, 15
+  xy: 1531, 583
   size: 105, 145
   orig: 165, 165
   offset: 30, 10
   index: -1
 images/tiles/default/tile_default_5
   rotate: false
-  xy: 1333, 752
+  xy: 1396, 104
   size: 145, 145
   orig: 165, 165
   offset: 10, 10
   index: -1
 images/tiles/default/tile_default_6
-  rotate: true
-  xy: 1583, 194
+  rotate: false
+  xy: 1589, 730
   size: 105, 145
   orig: 165, 165
   offset: 30, 10
   index: -1
 images/tiles/default/tile_default_7
   rotate: false
-  xy: 1529, 458
+  xy: 1797, 142
   size: 83, 145
   orig: 165, 165
   offset: 41, 10
   index: -1
 images/tiles/default/tile_default_8
   rotate: false
-  xy: 1661, 47
+  xy: 1640, 877
   size: 105, 145
   orig: 165, 165
   offset: 30, 10
   index: -1
 images/tiles/default/tile_edge_shimmer_1
   rotate: false
-  xy: 1251, 667
+  xy: 659, 362
   size: 33, 33
   orig: 165, 165
   offset: 122, 10
   index: -1
 images/tiles/default/tile_edge_shimmer_2
   rotate: true
-  xy: 1125, 253
+  xy: 483, 335
   size: 33, 57
   orig: 165, 165
   offset: 122, 10
   index: -1
 images/tiles/default/tile_edge_shimmer_3
   rotate: true
-  xy: 1045, 248
+  xy: 403, 335
   size: 33, 78
   orig: 165, 165
   offset: 122, 13
   index: -1
 images/tiles/default/tile_edge_shimmer_4
-  rotate: true
-  xy: 855, 234
+  rotate: false
+  xy: 2, 2
   size: 33, 93
   orig: 165, 165
   offset: 122, 22
   index: -1
 images/tiles/default/tile_edge_shimmer_5
-  rotate: true
-  xy: 950, 248
+  rotate: false
+  xy: 37, 2
   size: 33, 93
   orig: 165, 165
   offset: 122, 46
   index: -1
 images/tiles/default/tile_edge_shimmer_6
   rotate: true
-  xy: 1057, 667
+  xy: 316, 335
   size: 33, 85
   orig: 165, 165
   offset: 122, 70
   index: -1
 images/tiles/default/tile_edge_shimmer_7
-  rotate: true
-  xy: 1169, 467
+  rotate: false
+  xy: 625, 341
   size: 32, 54
   orig: 165, 165
   offset: 122, 98
   index: -1
 images/tiles/default/tile_edge_shimmer_8
-  rotate: true
-  xy: 1171, 289
+  rotate: false
+  xy: 285, 329
   size: 29, 39
   orig: 165, 165
   offset: 124, 116
   index: -1
 images/tiles/default/tile_glow
   rotate: false
-  xy: 419, 831
+  xy: 1057, 833
   size: 189, 189
   orig: 189, 189
   offset: 0, 0
   index: -1
 images/tiles/default/tile_shine_1
   rotate: false
-  xy: 1144, 648
+  xy: 178, 316
   size: 52, 52
   orig: 165, 165
   offset: 10, 103
   index: -1
 images/tiles/default/tile_shine_2
   rotate: false
-  xy: 1693, 738
+  xy: 161, 9
   size: 86, 86
   orig: 165, 165
   offset: 10, 69
   index: -1
 images/tiles/default/tile_shine_3
   rotate: false
-  xy: 1480, 770
+  xy: 1939, 888
   size: 134, 134
   orig: 165, 165
   offset: 10, 21
   index: -1
 images/tiles/default/tile_shine_4
   rotate: false
-  xy: 1463, 605
+  xy: 1409, 255
   size: 145, 145
   orig: 165, 165
   offset: 10, 10
   index: -1
 images/tiles/default/tile_shine_5
   rotate: false
-  xy: 1300, 133
+  xy: 1882, 153
   size: 134, 134
   orig: 165, 165
   offset: 21, 10
   index: -1
 images/tiles/default/tile_shine_6
   rotate: false
-  xy: 1616, 826
+  xy: 72, 8
   size: 87, 87
   orig: 165, 165
   offset: 68, 10
   index: -1
 images/tiles/default/tile_shine_7
   rotate: false
-  xy: 1198, 649
+  xy: 232, 317
   size: 51, 51
   orig: 165, 165
   offset: 104, 10
   index: -1
-images/tiles/letters/letter_a
+images/tiles/green/tile_green_1
   rotate: false
-  xy: 1744, 939
+  xy: 1543, 108
+  size: 145, 145
+  orig: 165, 165
+  offset: 10, 10
+  index: -1
+images/tiles/green/tile_green_2
+  rotate: false
+  xy: 1603, 436
+  size: 105, 145
+  orig: 165, 165
+  offset: 30, 10
+  index: -1
+images/tiles/green/tile_green_3
+  rotate: false
+  xy: 1810, 289
+  size: 83, 145
+  orig: 165, 165
+  offset: 41, 10
+  index: -1
+images/tiles/green/tile_green_4
+  rotate: false
+  xy: 1638, 583
+  size: 105, 145
+  orig: 165, 165
+  offset: 30, 10
+  index: -1
+images/tiles/green/tile_green_5
+  rotate: false
+  xy: 1384, 553
+  size: 145, 145
+  orig: 165, 165
+  offset: 10, 10
+  index: -1
+images/tiles/green/tile_green_6
+  rotate: false
+  xy: 1696, 730
+  size: 105, 145
+  orig: 165, 165
+  offset: 30, 10
+  index: -1
+images/tiles/green/tile_green_7
+  rotate: false
+  xy: 1817, 436
+  size: 83, 145
+  orig: 165, 165
+  offset: 41, 10
+  index: -1
+images/tiles/green/tile_green_8
+  rotate: false
+  xy: 1747, 877
+  size: 105, 145
+  orig: 165, 165
+  offset: 30, 10
+  index: -1
+images/tiles/letters/letter_a
+  rotate: true
+  xy: 1143, 398
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_b
   rotate: true
-  xy: 1673, 304
+  xy: 1249, 2
   size: 69, 81
   orig: 165, 165
   offset: 48, 41
   index: -1
 images/tiles/letters/letter_c
   rotate: true
-  xy: 1706, 606
+  xy: 1924, 2
   size: 66, 81
   orig: 165, 165
   offset: 50, 41
   index: -1
 images/tiles/letters/letter_d
-  rotate: false
-  xy: 1768, 138
+  rotate: true
+  xy: 1332, 2
   size: 69, 81
   orig: 165, 165
   offset: 48, 41
   index: -1
 images/tiles/letters/letter_e
   rotate: true
-  xy: 1693, 674
+  xy: 1895, 289
   size: 62, 81
   orig: 165, 165
   offset: 51, 41
   index: -1
 images/tiles/letters/letter_f
   rotate: true
-  xy: 1614, 458
+  xy: 1902, 436
   size: 62, 81
   orig: 165, 165
   offset: 51, 41
   index: -1
 images/tiles/letters/letter_g
-  rotate: false
-  xy: 1831, 357
+  rotate: true
+  xy: 2007, 2
   size: 66, 81
   orig: 165, 165
   offset: 50, 41
   index: -1
 images/tiles/letters/letter_h
-  rotate: false
-  xy: 1614, 522
+  rotate: true
+  xy: 1226, 398
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_i
   rotate: true
-  xy: 1088, 288
+  xy: 694, 365
   size: 30, 81
   orig: 165, 165
   offset: 68, 41
   index: -1
 images/tiles/letters/letter_j
   rotate: false
-  xy: 1839, 190
+  xy: 2012, 655
   size: 64, 81
   orig: 165, 165
   offset: 51, 41
   index: -1
 images/tiles/letters/letter_k
   rotate: false
-  xy: 1689, 522
+  xy: 1895, 353
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_l
   rotate: true
-  xy: 772, 211
+  xy: 542, 339
   size: 56, 81
   orig: 165, 165
   offset: 55, 41
   index: -1
 images/tiles/letters/letter_m
   rotate: true
-  xy: 1589, 361
+  xy: 249, 3
   size: 95, 82
   orig: 165, 165
   offset: 35, 41
   index: -1
 images/tiles/letters/letter_n
   rotate: false
-  xy: 1673, 375
+  xy: 1902, 500
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_o
   rotate: false
-  xy: 1768, 55
+  xy: 1995, 805
   size: 66, 81
   orig: 165, 165
   offset: 50, 41
   index: -1
 images/tiles/letters/letter_p
   rotate: false
-  xy: 1805, 273
+  xy: 1999, 70
   size: 69, 81
   orig: 165, 165
   offset: 48, 41
   index: -1
 images/tiles/letters/letter_q
-  rotate: true
-  xy: 1610, 605
+  rotate: false
+  xy: 1415, 8
   size: 66, 94
   orig: 165, 165
   offset: 50, 28
   index: -1
 images/tiles/letters/letter_r
   rotate: false
-  xy: 1730, 221
+  xy: 1970, 353
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_s
   rotate: true
-  xy: 1212, 253
+  xy: 1995, 738
   size: 65, 81
   orig: 165, 165
   offset: 50, 41
   index: -1
 images/tiles/letters/letter_t
-  rotate: false
-  xy: 1705, 832
+  rotate: true
+  xy: 1060, 397
   size: 74, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_u
   rotate: false
-  xy: 1748, 439
+  xy: 1937, 647
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_v
   rotate: false
-  xy: 1764, 523
+  xy: 1977, 564
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_w
   rotate: true
-  xy: 1610, 673
+  xy: 333, 3
   size: 95, 81
   orig: 165, 165
   offset: 35, 41
   index: -1
 images/tiles/letters/letter_x
   rotate: false
-  xy: 1756, 356
+  xy: 1985, 481
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_y
   rotate: false
-  xy: 1823, 440
+  xy: 1924, 70
   size: 73, 81
   orig: 165, 165
   offset: 46, 41
   index: -1
 images/tiles/letters/letter_z
   rotate: false
-  xy: 1836, 55
+  xy: 2063, 805
   size: 65, 81
   orig: 165, 165
   offset: 50, 41
   index: -1
 images/tiles/magic/tile_magic_blue_1
   rotate: false
-  xy: 2, 186
+  xy: 512, 397
   size: 206, 207
   orig: 300, 300
   offset: 40, 51
   index: -1
 images/tiles/magic/tile_magic_blue_2
   rotate: false
-  xy: 693, 2
+  xy: 574, 815
   size: 168, 207
   orig: 300, 300
   offset: 59, 52
   index: -1
 images/tiles/magic/tile_magic_blue_3
   rotate: false
-  xy: 914, 644
+  xy: 981, 189
   size: 141, 206
   orig: 300, 300
   offset: 75, 55
   index: -1
 images/tiles/magic/tile_magic_blue_4
-  rotate: true
-  xy: 211, 410
+  rotate: false
+  xy: 178, 370
   size: 165, 214
   orig: 300, 300
   offset: 72, 57
   index: -1
 images/tiles/magic/tile_magic_blue_5
   rotate: false
-  xy: 2, 813
+  xy: 356, 126
   size: 207, 207
   orig: 300, 300
   offset: 47, 51
   index: -1
 images/tiles/magic/tile_magic_blue_6
   rotate: false
-  xy: 418, 191
+  xy: 2, 97
   size: 185, 217
   orig: 300, 300
   offset: 49, 50
   index: -1
 images/tiles/magic/tile_magic_blue_7
-  rotate: true
-  xy: 2, 10
+  rotate: false
+  xy: 2, 788
   size: 174, 234
   orig: 300, 300
   offset: 68, 51
   index: -1
 images/tiles/magic/tile_magic_blue_8
   rotate: false
-  xy: 574, 622
+  xy: 574, 606
   size: 168, 207
   orig: 300, 300
   offset: 72, 52
   index: -1
 images/tiles/magic/tile_magic_default_1
   rotate: false
-  xy: 852, 466
+  xy: 1060, 473
   size: 175, 175
   orig: 300, 300
   offset: 59, 62
   index: -1
 images/tiles/magic/tile_magic_default_2
   rotate: false
-  xy: 1057, 702
+  xy: 1248, 847
   size: 136, 175
   orig: 300, 300
   offset: 80, 62
   index: -1
 images/tiles/magic/tile_magic_default_3
   rotate: true
-  xy: 1419, 906
+  xy: 599, 14
   size: 114, 176
   orig: 300, 300
   offset: 91, 64
   index: -1
 images/tiles/magic/tile_magic_default_4
   rotate: false
-  xy: 1029, 467
+  xy: 1195, 656
   size: 138, 175
   orig: 300, 300
   offset: 77, 62
   index: -1
 images/tiles/magic/tile_magic_default_5
   rotate: false
-  xy: 772, 269
+  xy: 1071, 6
   size: 176, 181
   orig: 300, 300
   offset: 59, 56
   index: -1
 images/tiles/magic/tile_magic_default_6
   rotate: false
-  xy: 1195, 702
+  xy: 1124, 220
   size: 136, 175
   orig: 300, 300
   offset: 78, 61
   index: -1
 images/tiles/magic/tile_magic_default_7
   rotate: true
-  xy: 1236, 899
+  xy: 416, 3
   size: 121, 181
   orig: 300, 300
   offset: 89, 56
   index: -1
 images/tiles/magic/tile_magic_default_8
   rotate: false
-  xy: 950, 283
+  xy: 1057, 650
   size: 136, 181
   orig: 300, 300
   offset: 83, 56
   index: -1
 images/tiles/magic/tile_magic_green_1
   rotate: false
-  xy: 210, 186
+  xy: 565, 130
   size: 206, 207
   orig: 300, 300
   offset: 40, 51
   index: -1
 images/tiles/magic/tile_magic_green_2
-  rotate: true
-  xy: 643, 452
+  rotate: false
+  xy: 720, 397
   size: 168, 207
   orig: 300, 300
   offset: 59, 52
   index: -1
 images/tiles/magic/tile_magic_green_3
-  rotate: true
-  xy: 1028, 879
+  rotate: false
+  xy: 914, 816
   size: 141, 206
   orig: 300, 300
   offset: 75, 55
   index: -1
 images/tiles/magic/tile_magic_green_4
-  rotate: true
-  xy: 427, 427
+  rotate: false
+  xy: 189, 100
   size: 165, 214
   orig: 300, 300
   offset: 72, 57
   index: -1
 images/tiles/magic/tile_magic_green_5
   rotate: false
-  xy: 2, 604
+  xy: 365, 815
   size: 207, 207
   orig: 300, 300
   offset: 47, 51
   index: -1
 images/tiles/magic/tile_magic_green_6
-  rotate: true
-  xy: 474, 4
+  rotate: false
+  xy: 178, 805
   size: 185, 217
   orig: 300, 300
   offset: 49, 50
   index: -1
 images/tiles/magic/tile_magic_green_7
-  rotate: true
-  xy: 238, 10
+  rotate: false
+  xy: 2, 552
   size: 174, 234
   orig: 300, 300
   offset: 68, 51
   index: -1
 images/tiles/magic/tile_magic_green_8
-  rotate: true
-  xy: 610, 852
+  rotate: false
+  xy: 744, 815
   size: 168, 207
   orig: 300, 300
   offset: 72, 52
   index: -1
 images/tiles/magic/tile_magic_red_1
   rotate: false
-  xy: 211, 813
+  xy: 773, 156
   size: 206, 207
   orig: 300, 300
   offset: 40, 51
   index: -1
 images/tiles/magic/tile_magic_red_2
   rotate: false
-  xy: 744, 643
+  xy: 744, 606
   size: 168, 207
   orig: 300, 300
   offset: 59, 52
   index: -1
 images/tiles/magic/tile_magic_red_3
   rotate: false
-  xy: 863, 26
+  xy: 914, 608
   size: 141, 206
   orig: 300, 300
   offset: 75, 55
   index: -1
 images/tiles/magic/tile_magic_red_4
   rotate: false
-  xy: 605, 211
+  xy: 345, 370
   size: 165, 214
   orig: 300, 300
   offset: 72, 57
   index: -1
 images/tiles/magic/tile_magic_red_5
   rotate: false
-  xy: 2, 395
+  xy: 365, 606
   size: 207, 207
   orig: 300, 300
   offset: 47, 51
   index: -1
 images/tiles/magic/tile_magic_red_6
   rotate: false
-  xy: 387, 594
+  xy: 178, 586
   size: 185, 217
   orig: 300, 300
   offset: 49, 50
   index: -1
 images/tiles/magic/tile_magic_red_7
   rotate: false
-  xy: 211, 577
+  xy: 2, 316
   size: 174, 234
   orig: 300, 300
   offset: 68, 51
   index: -1
 images/tiles/magic/tile_magic_red_8
-  rotate: true
-  xy: 819, 852
+  rotate: false
+  xy: 890, 397
   size: 168, 207
   orig: 300, 300
   offset: 72, 52
+  index: -1
+images/tiles/red/tile_red_1
+  rotate: false
+  xy: 1456, 406
+  size: 145, 145
+  orig: 165, 165
+  offset: 10, 10
+  index: -1
+images/tiles/red/tile_red_2
+  rotate: false
+  xy: 1703, 289
+  size: 105, 145
+  orig: 165, 165
+  offset: 30, 10
+  index: -1
+images/tiles/red/tile_red_3
+  rotate: false
+  xy: 1852, 583
+  size: 83, 145
+  orig: 165, 165
+  offset: 41, 10
+  index: -1
+images/tiles/red/tile_red_4
+  rotate: false
+  xy: 1710, 436
+  size: 105, 145
+  orig: 165, 165
+  offset: 30, 10
+  index: -1
+images/tiles/red/tile_red_5
+  rotate: false
+  xy: 1556, 259
+  size: 145, 145
+  orig: 165, 165
+  offset: 10, 10
+  index: -1
+images/tiles/red/tile_red_6
+  rotate: false
+  xy: 1745, 583
+  size: 105, 145
+  orig: 165, 165
+  offset: 30, 10
+  index: -1
+images/tiles/red/tile_red_7
+  rotate: false
+  xy: 1910, 730
+  size: 83, 145
+  orig: 165, 165
+  offset: 41, 10
+  index: -1
+images/tiles/red/tile_red_8
+  rotate: false
+  xy: 1803, 730
+  size: 105, 145
+  orig: 165, 165
+  offset: 30, 10
   index: -1

@@ -1,0 +1,44 @@
+{
+"skeleton": {
+	"hash": "qn5rZXy8penZ5szBRknNMHMPaR8",
+	"spine": "3.8.99",
+	"x": -540,
+	"y": -1260,
+	"width": 1080,
+	"height": 2520,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" },
+	{ "name": "bone2", "parent": "root" },
+	{ "name": "bone3", "parent": "root" },
+	{ "name": "bone4", "parent": "root" },
+	{ "name": "bone5", "parent": "root" }
+],
+"slots": [
+	{ "name": "images/world/placeholder", "bone": "root", "attachment": "images/world/placeholder" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"images/world/placeholder": {
+				"images/world/placeholder": { "width": 1080, "height": 2520 }
+			}
+		}
+	}
+],
+"animations": {
+	"world_bg_1_1": {
+		"slots": {
+			"images/world/placeholder": {
+				"attachment": [
+					{ "name": "images/world/placeholder" }
+				]
+			}
+		}
+	}
+}
+}

@@ -10,6 +10,7 @@ type Options = {
     type: string,
     onActivate: () => void,
     sheets: any,
+    root: PIXI.Container,
     container: PIXI.Container,
 }
 
@@ -27,6 +28,7 @@ export default class Tile {
     casting: boolean;
     spawning: boolean;
     posInWord: number;
+    tileContainer: PIXI.Container;
     tile: Spine;
 
     constructor(options: Options) {
@@ -45,7 +47,9 @@ export default class Tile {
         this.spawning = false;
         this.posInWord = 0;
 
+        this.tileContainer = new PIXI.Container();
         this.tile = new Spine(this.options.sheets.spineTiles.spineData);
+        this.tileContainer.addChild(this.tile);
     }
 
     handleTap = () => {
@@ -223,27 +227,32 @@ export default class Tile {
     }
 
     render() {
-        const {w, h, container, sheets} = this.options;
-        const {letter, type} = this;
+        const {w, h, container} = this.options;
+        const {letter, type, tileContainer, tile} = this;
 
-        const tile = this.tile;
-        //tile.debug = new SpineDebugRenderer();
-        //tile.debug.drawDebug = true;
-        tile.x = (w * 165) + (165/2);
-        tile.y = (h * 165) + (165/2);
-        tile.interactive = true;
-        tile.cursor = "pointer";
+        tileContainer.x = (w * 165) + (165/2);
+        tileContainer.y = (h * 165) + (165/2);
+        tileContainer.width = 165;
+        tileContainer.height = 165;
+        tileContainer.interactive = true;
+        tileContainer.cursor = "pointer";
+        tileContainer.interactiveChildren = false;
+        tileContainer.hitArea = new PIXI.Rectangle(-(165/2), -(165/2), 165, 165);
 
-        tile.on("pointerdown", () => this.setTouchDown());
-
-        tile.on("pointerup", () => this.setTouchUp());
-
-        tile.on('pointertap', () => {
+        tileContainer.on("pointerdown", () => this.setTouchDown());
+        tileContainer.on("pointerup", () => this.setTouchUp());
+        tileContainer.on("pointerout", () => this.setTouchUp());
+        tileContainer.on('pointertap', () => {
             this.handleTap();
         });
 
+        //tile.debug = new SpineDebugRenderer();
+        //tile.debug.drawDebug = true;
+        tile.x = 0;
+        tile.y = 0;
+
         this.setLetter(letter, type);
 
-        container.addChild(tile);
+        container.addChild(tileContainer);
     }
 }

@@ -9,6 +9,7 @@ import {letterData} from "./config";
 import { CastWord, LevelType } from "./types";
 
 type Options = {
+    root: PIXI.Container,
     x: number,
     y: number,
     width: number,
@@ -32,7 +33,7 @@ export default class SpellBook {
         this.options = options;
         this._possibleLetters = undefined;
 
-        const {x, y, width, height, container, sheets, level: {gridWidth, gridHeight}} = this.options;
+        const {x, y, width, height, root, container, sheets, level: {gridWidth, gridHeight}} = this.options;
         const spacing = 0;
 
         const tileSize = width <= height ?
@@ -67,6 +68,7 @@ export default class SpellBook {
             for (let w = 0; w < gridWidth; w += 1) {
                 const [letter, type] = this.getNewLetter();
                 tiles[h][w] = new Tile({
+                    root,
                     pos,
                     container: tileContainer,
                     sheets,
@@ -272,7 +274,7 @@ export default class SpellBook {
 
         if (this.foundWords.length > 0) {
             if (curIntAnimation !== "button_cast_ready" && curIntAnimation !== "button_cast_idle_to_ready") {
-                if (curIntAnimation === "button_pass_idle" || curIntAnimation === "button_pass_activate") {
+                if (curIntAnimation === "button_pass_ready" || curIntAnimation === "button_pass_activate") {
                     this.button.state.setAnimation(0, 'button_pass_to_cast', false);
                 } else {
                     this.button.state.setAnimation(0, 'button_cast_idle_to_ready', false);
@@ -284,9 +286,9 @@ export default class SpellBook {
         } else if (this.foundWords.length === 0) {
             if (curIntAnimation === "button_cast_ready" || curIntAnimation === "button_cast_idle_to_ready" || curIntAnimation === "button_cast_activate") {
                 this.button.state.setAnimation(0, 'button_cast_to_pass', false);
-                this.button.state.addAnimation(0, 'button_pass_idle', true, 0);
+                this.button.state.addAnimation(0, 'button_pass_ready', true, 0);
             } else {
-                this.button.state.setAnimation(0, 'button_pass_idle', true);
+                this.button.state.setAnimation(0, 'button_pass_ready', true);
             }
             //this.button.interactive = false;
             //this.button.cursor = "default";
@@ -374,7 +376,7 @@ export default class SpellBook {
 
         button.skeleton.setSkinByName('default');
         button.skeleton.setSlotsToSetupPose();
-        button.state.setAnimation(0, 'button_cast_idle', true);
+        button.state.setAnimation(0, 'button_pass_ready', true);
 
         button.interactive = true;
         button.cursor = "pointer";
