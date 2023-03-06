@@ -33,12 +33,15 @@ export default class SpellBook {
         this.options = options;
         this._possibleLetters = undefined;
 
-        const {x, y, width, height, root, container, sheets, level: {gridWidth, gridHeight}} = this.options;
+        const {x, y, width, height: baseHeight, root, container, sheets, level: {gridWidth, gridHeight: tmpGridHeight}} = this.options;
         const spacing = 0;
 
-        const tileSize = width <= height ?
-            Math.round((width - (spacing * (gridWidth - 1))) / gridWidth) :
-            Math.round((height - (spacing * (gridHeight - 1))) / gridHeight);
+        const gridHeight = tmpGridHeight + 1;
+        const height = baseHeight;
+        console.log("w", "h", width, height);
+        const wTileSize = Math.round((width - (spacing * (gridWidth - 1))) / gridWidth);
+        const hTileSize = Math.round((height - (spacing * (gridHeight - 1))) / gridHeight);
+        const tileSize = Math.min(wTileSize, hTileSize);
 
         const xOffset = Math.round((width - ((tileSize * gridWidth) + (spacing * (gridWidth - 1)))) / 2);
         const yOffset = Math.round((height - ((tileSize * gridHeight) + (spacing * (gridHeight - 1)))) / 2);
@@ -47,6 +50,8 @@ export default class SpellBook {
         container.addChild(spellbookContainer);
         spellbookContainer.x = x;
         spellbookContainer.y = y;
+        //spellbookContainer.pivot.x = width;
+        //spellbookContainer.pivot.y = height / 2;
 
         this.activeTile = null;
         this.foundWords = [];
@@ -56,14 +61,19 @@ export default class SpellBook {
         const tiles: Array<Array<Tile>> = this.tiles = [];
         let pos = 0;
 
+        console.log(xOffset, yOffset)
         const tileContainer = new PIXI.Container();
         tileContainer.x = xOffset;
         tileContainer.y = yOffset;
-        tileContainer.scale.x = width / (165 * gridWidth);
-        tileContainer.scale.y = width / (165 * gridWidth);
+        const scale = height > width ?
+            width / ((165 + spacing) * gridWidth) :
+            height / ((165 + spacing) * gridHeight);
+        console.log(scale);
+        tileContainer.scale.x = scale;
+        tileContainer.scale.y = scale;
         spellbookContainer.addChild(tileContainer);
 
-        for (let h = 0; h < gridHeight; h += 1) {
+        for (let h = 0; h < gridHeight - 1; h += 1) {
             tiles[h] = [];
             for (let w = 0; w < gridWidth; w += 1) {
                 const [letter, type] = this.getNewLetter();
@@ -83,7 +93,13 @@ export default class SpellBook {
             }
         }
 
-        this.button = new Spine(sheets.buttonCast.spineData);
+        const button = this.button = new Spine(sheets.buttonCast.spineData);
+
+        const bWRatio = tileSize / 240;
+        button.scale.x = bWRatio;
+        button.scale.y = bWRatio;
+        button.x = (width / 2);
+        button.y = height - spacing - (tileSize / 2);
     }
 
     getNewLetter() {
@@ -368,11 +384,6 @@ export default class SpellBook {
         const button = this.button;
         //tile.debug = new SpineDebugRenderer();
         //tile.debug.drawDebug = true;
-
-        button.scale.x = 0.4;
-        button.scale.y = 0.4;
-        button.x = (width / 2);
-        button.y = height - 50;
 
         button.skeleton.setSkinByName('default');
         button.skeleton.setSlotsToSetupPose();

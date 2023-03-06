@@ -38,10 +38,11 @@ export default class Level {
         background.x = width / 2;
         background.y = height / 2;
         const wRatio = width / bgWidth;
-        const hRatio = height / bgHeight;
-        const ratio = Math.max(wRatio, hRatio);
-        background.scale.x = ratio;
-        background.scale.y = ratio;
+        //const hRatio = height / bgHeight;
+        //const ratio = Math.max(wRatio, hRatio);
+        console.log(wRatio, width, bgWidth);
+        background.scale.x = wRatio;
+        background.scale.y = wRatio;
         //monster.height = 165;
         //monster.scaleX = -1;
 
@@ -55,7 +56,7 @@ export default class Level {
             container,
             sheets: this.options.sheets,
             width: this.options.width,
-            height: 300,
+            height: this.options.height / 2,
             x: 0,
             y: 0,
             level: this.options.level,
@@ -67,9 +68,9 @@ export default class Level {
             container,
             sheets: this.options.sheets,
             width: this.options.width,
-            height: 500,
+            height: this.options.height / 2,
             x: 0,
-            y: this.options.height - 500,
+            y: this.options.height / 2,
             level: this.options.level,
             onCastSpell: this.handleCastSpell,
         });
