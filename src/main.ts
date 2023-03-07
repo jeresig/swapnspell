@@ -17,9 +17,10 @@ document.body.appendChild(app.view);
     const sheets = {
         spineTiles: await PIXI.Assets.load('./assets/spine/tiles.json'),
         buttonCast: await PIXI.Assets.load('./assets/spine/button_cast.json'),
-        monster: await PIXI.Assets.load('./assets/spine/goblins.json'),
+        monster: await PIXI.Assets.load('./assets/spine/ss_enemies.json'),
         hero: await PIXI.Assets.load('./assets/spine/ss_hero.json'),
-        background: await PIXI.Assets.load('./assets/spine/world_backgrounds.json')
+        background: await PIXI.Assets.load('./assets/spine/world_backgrounds.json'),
+        book: await PIXI.Assets.load('./assets/spine/book_ui.json'),
     };
 
     const level = new Level({

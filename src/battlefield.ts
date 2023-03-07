@@ -50,24 +50,25 @@ export default class Battlefield {
             container: battlefield,
             maxHealth: health,
             sheets,
-            x: 50,
+            x: 70,
             y: 100,
             size: 50,
         });
     }
 
     attack(foundWords: Array<CastWord>) {
-        for (const word of foundWords) {
-            if (word.dir === "horizontal") {
-                if (this.monsterSlots[word.y]) {
-                    this.monsterSlots[word.y].damage(word.length * (word.length - 2));
-                }
-            } else {
-                // TODO
-            }
-        }
-
         if (foundWords.length > 0) {
+            setTimeout(() => {
+                for (const word of foundWords) {
+                    if (word.dir === "horizontal") {
+                        if (this.monsterSlots[word.y]) {
+                            this.monsterSlots[word.y].damage(word.length * (word.length - 2));
+                        }
+                    } else {
+                        // TODO
+                    }
+                }
+            }, 600);
             return this.hero.attack();
         }
 
@@ -79,9 +80,11 @@ export default class Battlefield {
         for (const monsterSlot of this.monsterSlots) {
             if (monsterSlot) {
                 if (monsterSlot.options.monster.alive) {
-                    const damage = monsterSlot.options.monster.attack();
                     setTimeout(() => {
-                        this.hero.damage(damage);
+                        const damage = monsterSlot.attack();
+                        setTimeout(() => {
+                            this.hero.damage(damage);
+                        }, 300);
                     }, pos * 400);
                     pos += 1;
                 } else {

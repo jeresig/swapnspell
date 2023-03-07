@@ -1,0 +1,734 @@
+
+ss_enemies.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/enemies/goblin_axe_blue/Axe-goblin_blue_01
+  rotate: false
+  xy: 1554, 14
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_05
+  rotate: false
+  xy: 1554, 14
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_07
+  rotate: false
+  xy: 1554, 14
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_09
+  rotate: false
+  xy: 1554, 14
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_14
+  rotate: false
+  xy: 1554, 14
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_18
+  rotate: false
+  xy: 1554, 14
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_02
+  rotate: true
+  xy: 1274, 6
+  size: 80, 72
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_03
+  rotate: false
+  xy: 638, 2
+  size: 84, 72
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_04
+  rotate: false
+  xy: 724, 2
+  size: 80, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_06
+  rotate: true
+  xy: 556, 2
+  size: 64, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_08
+  rotate: false
+  xy: 1348, 10
+  size: 68, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_10
+  rotate: true
+  xy: 1684, 100
+  size: 76, 72
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_11
+  rotate: true
+  xy: 162, 142
+  size: 112, 88
+  orig: 128, 128
+  offset: 0, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_12
+  rotate: true
+  xy: 720, 80
+  size: 84, 72
+  orig: 128, 128
+  offset: 4, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_13
+  rotate: false
+  xy: 1784, 178
+  size: 60, 76
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_15
+  rotate: false
+  xy: 806, 2
+  size: 76, 80
+  orig: 128, 128
+  offset: 36, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_19
+  rotate: false
+  xy: 806, 2
+  size: 76, 80
+  orig: 128, 128
+  offset: 36, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_16
+  rotate: true
+  xy: 556, 68
+  size: 88, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_17
+  rotate: true
+  xy: 2, 8
+  size: 96, 76
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_20
+  rotate: true
+  xy: 748, 170
+  size: 84, 72
+  orig: 128, 128
+  offset: 40, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_21
+  rotate: true
+  xy: 1490, 92
+  size: 80, 56
+  orig: 128, 128
+  offset: 44, 20
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_22
+  rotate: true
+  xy: 1118, 170
+  size: 84, 36
+  orig: 128, 128
+  offset: 44, 24
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_23
+  rotate: true
+  xy: 470, 158
+  size: 96, 36
+  orig: 128, 128
+  offset: 32, 24
+  index: -1
+images/enemies/goblin_axe_blue/Axe-goblin_blue_24
+  rotate: true
+  xy: 326, 12
+  size: 104, 36
+  orig: 128, 128
+  offset: 24, 24
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_01
+  rotate: false
+  xy: 1606, 96
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_05
+  rotate: false
+  xy: 1606, 96
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_07
+  rotate: false
+  xy: 1606, 96
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_09
+  rotate: false
+  xy: 1606, 96
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_14
+  rotate: false
+  xy: 1606, 96
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_18
+  rotate: false
+  xy: 1606, 96
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_02
+  rotate: true
+  xy: 1232, 174
+  size: 80, 72
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_03
+  rotate: true
+  xy: 794, 84
+  size: 84, 72
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_04
+  rotate: true
+  xy: 884, 2
+  size: 80, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_06
+  rotate: false
+  xy: 1424, 92
+  size: 64, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_08
+  rotate: false
+  xy: 1354, 92
+  size: 68, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_10
+  rotate: true
+  xy: 1710, 178
+  size: 76, 72
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_11
+  rotate: true
+  xy: 252, 142
+  size: 112, 88
+  orig: 128, 128
+  offset: 0, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_12
+  rotate: true
+  xy: 822, 170
+  size: 84, 72
+  orig: 128, 128
+  offset: 4, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_13
+  rotate: false
+  xy: 1784, 22
+  size: 60, 76
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_15
+  rotate: false
+  xy: 962, 2
+  size: 76, 80
+  orig: 128, 128
+  offset: 36, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_19
+  rotate: false
+  xy: 962, 2
+  size: 76, 80
+  orig: 128, 128
+  offset: 36, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_16
+  rotate: true
+  xy: 584, 166
+  size: 88, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_17
+  rotate: true
+  xy: 80, 8
+  size: 96, 76
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_20
+  rotate: true
+  xy: 868, 84
+  size: 84, 72
+  orig: 128, 128
+  offset: 40, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_21
+  rotate: true
+  xy: 1516, 174
+  size: 80, 56
+  orig: 128, 128
+  offset: 44, 20
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_22
+  rotate: true
+  xy: 1156, 170
+  size: 84, 36
+  orig: 128, 128
+  offset: 44, 24
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_23
+  rotate: true
+  xy: 508, 158
+  size: 96, 36
+  orig: 128, 128
+  offset: 32, 24
+  index: -1
+images/enemies/goblin_axe_default/Axe-goblin_24
+  rotate: true
+  xy: 432, 150
+  size: 104, 36
+  orig: 128, 128
+  offset: 24, 24
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_01
+  rotate: false
+  xy: 1632, 178
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_05
+  rotate: false
+  xy: 1632, 178
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_07
+  rotate: false
+  xy: 1632, 178
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_09
+  rotate: false
+  xy: 1632, 178
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_14
+  rotate: false
+  xy: 1632, 178
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_18
+  rotate: false
+  xy: 1632, 178
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_02
+  rotate: true
+  xy: 1280, 92
+  size: 80, 72
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_03
+  rotate: true
+  xy: 896, 170
+  size: 84, 72
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_04
+  rotate: true
+  xy: 1040, 2
+  size: 80, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_06
+  rotate: false
+  xy: 1450, 174
+  size: 64, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_08
+  rotate: false
+  xy: 1380, 174
+  size: 68, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_10
+  rotate: true
+  xy: 1710, 22
+  size: 76, 72
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_11
+  rotate: true
+  xy: 236, 4
+  size: 112, 88
+  orig: 128, 128
+  offset: 0, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_12
+  rotate: true
+  xy: 942, 84
+  size: 84, 72
+  orig: 128, 128
+  offset: 4, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_13
+  rotate: false
+  xy: 1832, 100
+  size: 60, 76
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_15
+  rotate: false
+  xy: 1118, 2
+  size: 76, 80
+  orig: 128, 128
+  offset: 36, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_19
+  rotate: false
+  xy: 1118, 2
+  size: 76, 80
+  orig: 128, 128
+  offset: 36, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_16
+  rotate: true
+  xy: 638, 76
+  size: 88, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_17
+  rotate: true
+  xy: 158, 8
+  size: 96, 76
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_20
+  rotate: true
+  xy: 970, 170
+  size: 84, 72
+  orig: 128, 128
+  offset: 40, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_21
+  rotate: true
+  xy: 1548, 92
+  size: 80, 56
+  orig: 128, 128
+  offset: 44, 20
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_22
+  rotate: true
+  xy: 1164, 84
+  size: 84, 36
+  orig: 128, 128
+  offset: 44, 24
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_23
+  rotate: true
+  xy: 518, 28
+  size: 96, 36
+  orig: 128, 128
+  offset: 32, 24
+  index: -1
+images/enemies/goblin_axe_green/Axe-goblin_green_24
+  rotate: true
+  xy: 364, 12
+  size: 104, 36
+  orig: 128, 128
+  offset: 24, 24
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_01
+  rotate: false
+  xy: 1632, 18
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_05
+  rotate: false
+  xy: 1632, 18
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_07
+  rotate: false
+  xy: 1632, 18
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_09
+  rotate: false
+  xy: 1632, 18
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_14
+  rotate: false
+  xy: 1632, 18
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_18
+  rotate: false
+  xy: 1632, 18
+  size: 76, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_02
+  rotate: true
+  xy: 1306, 174
+  size: 80, 72
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_03
+  rotate: true
+  xy: 1016, 84
+  size: 84, 72
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_04
+  rotate: true
+  xy: 1196, 2
+  size: 80, 76
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_06
+  rotate: false
+  xy: 1488, 10
+  size: 64, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_08
+  rotate: false
+  xy: 1418, 10
+  size: 68, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_10
+  rotate: true
+  xy: 1758, 100
+  size: 76, 72
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_11
+  rotate: true
+  xy: 342, 142
+  size: 112, 88
+  orig: 128, 128
+  offset: 0, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_12
+  rotate: true
+  xy: 1044, 170
+  size: 84, 72
+  orig: 128, 128
+  offset: 4, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_13
+  rotate: false
+  xy: 1846, 178
+  size: 60, 76
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_15
+  rotate: false
+  xy: 1202, 88
+  size: 76, 80
+  orig: 128, 128
+  offset: 36, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_19
+  rotate: false
+  xy: 1202, 88
+  size: 76, 80
+  orig: 128, 128
+  offset: 36, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_16
+  rotate: true
+  xy: 666, 166
+  size: 88, 80
+  orig: 128, 128
+  offset: 32, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_17
+  rotate: true
+  xy: 440, 20
+  size: 96, 76
+  orig: 128, 128
+  offset: 28, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_20
+  rotate: true
+  xy: 1090, 84
+  size: 84, 72
+  orig: 128, 128
+  offset: 40, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_21
+  rotate: true
+  xy: 1574, 174
+  size: 80, 56
+  orig: 128, 128
+  offset: 44, 20
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_22
+  rotate: true
+  xy: 1194, 170
+  size: 84, 36
+  orig: 128, 128
+  offset: 44, 24
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_23
+  rotate: true
+  xy: 546, 158
+  size: 96, 36
+  orig: 128, 128
+  offset: 32, 24
+  index: -1
+images/enemies/goblin_axe_red/Axe-goblin_red_24
+  rotate: true
+  xy: 402, 12
+  size: 104, 36
+  orig: 128, 128
+  offset: 24, 24
+  index: -1
+images/enemies/health_bar_blue
+  rotate: false
+  xy: 162, 118
+  size: 92, 22
+  orig: 92, 22
+  offset: 0, 0
+  index: -1
+images/enemies/health_bar_default
+  rotate: false
+  xy: 350, 118
+  size: 92, 22
+  orig: 92, 22
+  offset: 0, 0
+  index: -1
+images/enemies/health_bar_frame_blue
+  rotate: true
+  xy: 2, 106
+  size: 148, 38
+  orig: 148, 38
+  offset: 0, 0
+  index: -1
+images/enemies/health_bar_frame_default
+  rotate: true
+  xy: 82, 106
+  size: 148, 38
+  orig: 148, 38
+  offset: 0, 0
+  index: -1
+images/enemies/health_bar_frame_green
+  rotate: true
+  xy: 122, 106
+  size: 148, 38
+  orig: 148, 38
+  offset: 0, 0
+  index: -1
+images/enemies/health_bar_frame_red
+  rotate: true
+  xy: 42, 106
+  size: 148, 38
+  orig: 148, 38
+  offset: 0, 0
+  index: -1
+images/enemies/health_bar_green
+  rotate: false
+  xy: 444, 126
+  size: 92, 22
+  orig: 92, 22
+  offset: 0, 0
+  index: -1
+images/enemies/health_bar_red
+  rotate: false
+  xy: 256, 118
+  size: 92, 22
+  orig: 92, 22
+  offset: 0, 0
+  index: -1

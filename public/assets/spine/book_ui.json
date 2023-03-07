@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "+V/Un8Dkfq1A9nOENlbm8ThnGtk", "spine": "3.8.99", "images": "", "audio": "" },
+"skeleton": { "hash": "uHs/un4PGUy5a3Wk5v1h9IC3v1c", "spine": "3.8.99", "images": "", "audio": "" },
 "bones": [
 	{ "name": "root" },
 	{ "name": "book_ui_main", "parent": "root" },
@@ -10,6 +10,24 @@
 	{ "name": "images/ui/main_screen_mock_2", "bone": "root" },
 	{ "name": "images/ui/lane_hilite", "bone": "book_ui_main", "color": "fce4921d", "blend": "additive" },
 	{ "name": "images/ui/lane_icon", "bone": "lane_icon" },
+	{ "name": "images/ui/health_frame", "bone": "book_ui_main" },
+	{ "name": "health_bar", "bone": "book_ui_main" },
+	{ "name": "health_nugget_1", "bone": "book_ui_main" },
+	{ "name": "health_nugget_2", "bone": "book_ui_main" },
+	{ "name": "health_nugget_3", "bone": "book_ui_main" },
+	{ "name": "health_nugget_4", "bone": "book_ui_main" },
+	{ "name": "health_nugget_5", "bone": "book_ui_main" },
+	{ "name": "health_nugget_6", "bone": "book_ui_main" },
+	{ "name": "health_nugget_7", "bone": "book_ui_main" },
+	{ "name": "health_nugget_8", "bone": "book_ui_main" },
+	{ "name": "health_nugget_9", "bone": "book_ui_main" },
+	{ "name": "health_nugget_10", "bone": "book_ui_main" },
+	{ "name": "health_nugget_11", "bone": "book_ui_main" },
+	{ "name": "health_nugget_12", "bone": "book_ui_main" },
+	{ "name": "health_nugget_13", "bone": "book_ui_main" },
+	{ "name": "health_nugget_14", "bone": "book_ui_main" },
+	{ "name": "health_color_overlay", "bone": "book_ui_main", "blend": "multiply" },
+	{ "name": "health_color_overlay2", "bone": "book_ui_main", "blend": "screen" },
 	{ "name": "images/ui/heal_effect", "bone": "book_ui_main" },
 	{ "name": "images/ui/icon_heart_1", "bone": "book_ui_main" },
 	{ "name": "images/ui/icon_heart_glow", "bone": "book_ui_main", "blend": "additive" }
@@ -18,6 +36,66 @@
 	{
 		"name": "default",
 		"attachments": {
+			"health_bar": {
+				"health_bar": {
+					"type": "clipping",
+					"end": "health_color_overlay2",
+					"vertexCount": 4,
+					"vertices": [ 1.87, -27.94, 0.95, 36.74, 945.37, 34.01, 945.66, -27.94 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"health_color_overlay": {
+				"images/ui/health_nugget_overlay": { "x": 476.96, "y": 3.42, "scaleX": 13.9468, "width": 67, "height": 39 }
+			},
+			"health_color_overlay2": {
+				"images/ui/health_nugget_overlay": { "x": 476.96, "y": 3.42, "scaleX": 13.9468, "width": 67, "height": 39 }
+			},
+			"health_nugget_1": {
+				"images/ui/health_nugget": { "x": 47.72, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_2": {
+				"images/ui/health_nugget": { "x": 114.39, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_3": {
+				"images/ui/health_nugget": { "x": 180.63, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_4": {
+				"images/ui/health_nugget": { "x": 247.09, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_5": {
+				"images/ui/health_nugget": { "x": 313.22, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_6": {
+				"images/ui/health_nugget": { "x": 379.89, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_7": {
+				"images/ui/health_nugget": { "x": 446.14, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_8": {
+				"images/ui/health_nugget": { "x": 512.59, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_9": {
+				"images/ui/health_nugget": { "x": 578.99, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_10": {
+				"images/ui/health_nugget": { "x": 645.66, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_11": {
+				"images/ui/health_nugget": { "x": 711.9, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_12": {
+				"images/ui/health_nugget": { "x": 778.36, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_13": {
+				"images/ui/health_nugget": { "x": 844.16, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"health_nugget_14": {
+				"images/ui/health_nugget": { "x": 910.62, "y": 3.39, "width": 67, "height": 39 }
+			},
+			"images/ui/book_back": {
+				"images/ui/book_back": { "x": 103.43, "y": 0.5, "width": 1522, "height": 1123 }
+			},
 			"images/ui/heal_effect": {
 				"images/ui/green_effect_01": {
 					"x": 157.14,
@@ -137,6 +215,9 @@
 					"height": 192
 				}
 			},
+			"images/ui/health_frame": {
+				"images/ui/health_frame": { "x": 430.29, "y": -6.39, "width": 1080, "height": 111 }
+			},
 			"images/ui/icon_heart_1": {
 				"images/ui/icon_heart_1": { "width": 160, "height": 160 },
 				"images/ui/icon_heart_2": { "width": 160, "height": 160 },
@@ -181,6 +262,153 @@
 	}
 ],
 "animations": {
+	"book_frame": {
+		"slots": {
+			"images/ui/book_back": {
+				"attachment": [
+					{ "name": "images/ui/book_back" }
+				]
+			}
+		}
+	},
+	"health_frame_scrub": {
+		"slots": {
+			"health_bar": {
+				"attachment": [
+					{ "name": "health_bar" }
+				]
+			},
+			"health_color_overlay": {
+				"color": [
+					{ "color": "ff4200b4", "curve": "stepped" },
+					{ "time": 0.8, "color": "ff4200b4" },
+					{ "time": 0.8333, "color": "ff9700b5", "curve": "stepped" },
+					{ "time": 1.6333, "color": "ff9700b5" },
+					{ "time": 1.6667, "color": "f3ff009a", "curve": "stepped" },
+					{ "time": 2.5, "color": "f3ff009a" },
+					{ "time": 2.5333, "color": "00ff0768", "curve": "stepped" },
+					{ "time": 3.3333, "color": "00ff0768" }
+				],
+				"attachment": [
+					{ "name": "images/ui/health_nugget_overlay" }
+				]
+			},
+			"health_color_overlay2": {
+				"color": [
+					{ "color": "fc0000cf", "curve": "stepped" },
+					{ "time": 0.8, "color": "fc0000cf" },
+					{ "time": 0.8333, "color": "fc8700ce", "curve": "stepped" },
+					{ "time": 1.6333, "color": "fc8700ce" },
+					{ "time": 1.6667, "color": "fcd900d3", "curve": "stepped" },
+					{ "time": 2.5, "color": "fcd900d3" },
+					{ "time": 2.5333, "color": "00fd01d3", "curve": "stepped" },
+					{ "time": 3.3333, "color": "00fd01d3" }
+				],
+				"attachment": [
+					{ "name": "images/ui/health_nugget_overlay" }
+				]
+			},
+			"health_nugget_1": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_2": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_3": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_4": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_5": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_6": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_7": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_8": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_9": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_10": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_11": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_12": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_13": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"health_nugget_14": {
+				"attachment": [
+					{ "name": "images/ui/health_nugget" }
+				]
+			},
+			"images/ui/health_frame": {
+				"attachment": [
+					{ "name": "images/ui/health_frame" }
+				]
+			}
+		},
+		"bones": {
+			"book_ui_main": {
+				"translate": [
+					{ "x": -430 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"health_bar": {
+					"health_bar": [
+						{
+							"offset": 4,
+							"vertices": [ -922.5757, 0, -922.5757 ]
+						},
+						{
+							"time": 3.3333,
+							"offset": 4,
+							"vertices": [ 1.26709, 0, 0.87207 ]
+						}
+					]
+				}
+			}
+		}
+	},
 	"health_icon_enter": {
 		"slots": {
 			"images/ui/icon_heart_1": {

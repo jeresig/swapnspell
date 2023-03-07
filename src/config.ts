@@ -12,9 +12,9 @@ export const LEVELS: Array<LevelType> = [
         minWordSize: 3,
         numMonsterSlots: 3,
         monsters: [
-            {maxHealth: 10, curHealth: 10, alive: true, attack: () => 5},
-            {maxHealth: 20, curHealth: 20, alive: true, attack: () => 3},
-            {maxHealth: 30, curHealth: 30, alive: true, attack: () => 2},
+            {maxHealth: 6, curHealth: 6, alive: true, attack: () => 5},
+            {maxHealth: 6, curHealth: 6, alive: true, attack: () => 3},
+            {maxHealth: 6, curHealth: 6, alive: true, attack: () => 2},
         ],
     },
     {

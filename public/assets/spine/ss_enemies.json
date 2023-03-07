@@ -1,0 +1,276 @@
+{
+"skeleton": { "hash": "tG78f3QF1781Nince/OyPF/fVtI", "spine": "3.8.99", "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "enemy_root", "parent": "root" },
+	{ "name": "health_bar_base", "parent": "root" },
+	{ "name": "health_bar_scale", "parent": "health_bar_base", "x": -66.07, "scaleX": 1.4355 }
+],
+"slots": [
+	{ "name": "goblin_axe", "bone": "enemy_root", "attachment": "goblin_axe_1" },
+	{ "name": "health_bar_base", "bone": "health_bar_base" },
+	{ "name": "health_bar_scale", "bone": "health_bar_scale" }
+],
+"skins": [
+	{
+		"name": "enemy_health_blue",
+		"attachments": {
+			"health_bar_base": {
+				"health_bar_base": { "name": "images/enemies/health_bar_frame_blue", "width": 148, "height": 38 }
+			},
+			"health_bar_scale": {
+				"health_bar_scale": { "name": "images/enemies/health_bar_blue", "x": 46.01, "width": 92, "height": 22 }
+			}
+		}
+	},
+	{
+		"name": "enemy_health_default",
+		"attachments": {
+			"health_bar_base": {
+				"health_bar_base": { "name": "images/enemies/health_bar_frame_default", "width": 148, "height": 38 }
+			},
+			"health_bar_scale": {
+				"health_bar_scale": { "name": "images/enemies/health_bar_default", "x": 46.01, "width": 92, "height": 22 }
+			}
+		}
+	},
+	{
+		"name": "enemy_health_green",
+		"attachments": {
+			"health_bar_base": {
+				"health_bar_base": { "name": "images/enemies/health_bar_frame_green", "width": 148, "height": 38 }
+			},
+			"health_bar_scale": {
+				"health_bar_scale": { "name": "images/enemies/health_bar_green", "x": 46.01, "width": 92, "height": 22 }
+			}
+		}
+	},
+	{
+		"name": "enemy_health_red",
+		"attachments": {
+			"health_bar_base": {
+				"health_bar_base": { "name": "images/enemies/health_bar_frame_red", "width": 148, "height": 38 }
+			},
+			"health_bar_scale": {
+				"health_bar_scale": { "name": "images/enemies/health_bar_red", "x": 46.01, "width": 92, "height": 22 }
+			}
+		}
+	},
+	{
+		"name": "goblin_axe_blue",
+		"attachments": {
+			"goblin_axe": {
+				"goblin_axe_1": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_01", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_2": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_02", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_3": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_03", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_4": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_04", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_5": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_05", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_6": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_06", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_7": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_07", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_8": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_08", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_9": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_09", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_10": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_10", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_11": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_11", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_12": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_12", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_13": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_13", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_14": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_14", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_15": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_15", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_16": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_16", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_17": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_17", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_18": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_18", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_19": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_19", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_20": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_20", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_21": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_21", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_22": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_22", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_23": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_23", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_24": { "name": "images/enemies/goblin_axe_blue/Axe-goblin_blue_24", "y": 39.69, "width": 128, "height": 128 }
+			}
+		}
+	},
+	{
+		"name": "goblin_axe_default",
+		"attachments": {
+			"goblin_axe": {
+				"goblin_axe_1": { "name": "images/enemies/goblin_axe_default/Axe-goblin_01", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_2": { "name": "images/enemies/goblin_axe_default/Axe-goblin_02", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_3": { "name": "images/enemies/goblin_axe_default/Axe-goblin_03", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_4": { "name": "images/enemies/goblin_axe_default/Axe-goblin_04", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_5": { "name": "images/enemies/goblin_axe_default/Axe-goblin_05", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_6": { "name": "images/enemies/goblin_axe_default/Axe-goblin_06", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_7": { "name": "images/enemies/goblin_axe_default/Axe-goblin_07", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_8": { "name": "images/enemies/goblin_axe_default/Axe-goblin_08", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_9": { "name": "images/enemies/goblin_axe_default/Axe-goblin_09", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_10": { "name": "images/enemies/goblin_axe_default/Axe-goblin_10", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_11": { "name": "images/enemies/goblin_axe_default/Axe-goblin_11", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_12": { "name": "images/enemies/goblin_axe_default/Axe-goblin_12", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_13": { "name": "images/enemies/goblin_axe_default/Axe-goblin_13", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_14": { "name": "images/enemies/goblin_axe_default/Axe-goblin_14", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_15": { "name": "images/enemies/goblin_axe_default/Axe-goblin_15", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_16": { "name": "images/enemies/goblin_axe_default/Axe-goblin_16", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_17": { "name": "images/enemies/goblin_axe_default/Axe-goblin_17", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_18": { "name": "images/enemies/goblin_axe_default/Axe-goblin_18", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_19": { "name": "images/enemies/goblin_axe_default/Axe-goblin_19", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_20": { "name": "images/enemies/goblin_axe_default/Axe-goblin_20", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_21": { "name": "images/enemies/goblin_axe_default/Axe-goblin_21", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_22": { "name": "images/enemies/goblin_axe_default/Axe-goblin_22", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_23": { "name": "images/enemies/goblin_axe_default/Axe-goblin_23", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_24": { "name": "images/enemies/goblin_axe_default/Axe-goblin_24", "y": 39.69, "width": 128, "height": 128 }
+			}
+		}
+	},
+	{
+		"name": "goblin_axe_green",
+		"attachments": {
+			"goblin_axe": {
+				"goblin_axe_1": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_01", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_2": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_02", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_3": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_03", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_4": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_04", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_5": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_05", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_6": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_06", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_7": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_07", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_8": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_08", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_9": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_09", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_10": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_10", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_11": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_11", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_12": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_12", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_13": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_13", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_14": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_14", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_15": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_15", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_16": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_16", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_17": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_17", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_18": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_18", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_19": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_19", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_20": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_20", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_21": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_21", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_22": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_22", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_23": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_23", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_24": { "name": "images/enemies/goblin_axe_green/Axe-goblin_green_24", "y": 39.69, "width": 128, "height": 128 }
+			}
+		}
+	},
+	{
+		"name": "goblin_axe_red",
+		"attachments": {
+			"goblin_axe": {
+				"goblin_axe_1": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_01", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_2": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_02", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_3": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_03", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_4": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_04", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_5": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_05", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_6": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_06", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_7": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_07", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_8": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_08", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_9": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_09", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_10": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_10", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_11": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_11", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_12": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_12", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_13": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_13", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_14": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_14", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_15": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_15", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_16": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_16", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_17": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_17", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_18": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_18", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_19": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_19", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_20": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_20", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_21": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_21", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_22": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_22", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_23": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_23", "y": 39.69, "width": 128, "height": 128 },
+				"goblin_axe_24": { "name": "images/enemies/goblin_axe_red/Axe-goblin_red_24", "y": 39.69, "width": 128, "height": 128 }
+			}
+		}
+	}
+],
+"animations": {
+	"enemy_health_scrub": {
+		"slots": {
+			"health_bar_base": {
+				"attachment": [
+					{ "name": "health_bar_base" }
+				]
+			},
+			"health_bar_scale": {
+				"attachment": [
+					{ "name": "health_bar_scale" }
+				]
+			}
+		},
+		"bones": {
+			"health_bar_scale": {
+				"scale": [
+					{ "x": 0.007 },
+					{ "time": 3.3333 }
+				]
+			}
+		}
+	},
+	"goblin_axe_attack": {
+		"slots": {
+			"goblin_axe": {
+				"attachment": [
+					{ "name": "goblin_axe_10" },
+					{ "time": 0.1667, "name": "goblin_axe_11" },
+					{ "time": 0.3333, "name": "goblin_axe_12" },
+					{ "time": 0.5, "name": "goblin_axe_13" },
+					{ "time": 0.6667, "name": "goblin_axe_14" },
+					{ "time": 0.8333, "name": "goblin_axe_14" }
+				]
+			}
+		}
+	},
+	"goblin_axe_death": {
+		"slots": {
+			"goblin_axe": {
+				"attachment": [
+					{ "name": "goblin_axe_18" },
+					{ "time": 0.1667, "name": "goblin_axe_19" },
+					{ "time": 0.3333, "name": "goblin_axe_20" },
+					{ "time": 0.5, "name": "goblin_axe_21" },
+					{ "time": 0.6667, "name": "goblin_axe_22" },
+					{ "time": 0.8333, "name": "goblin_axe_23" },
+					{ "time": 1, "name": "goblin_axe_24" },
+					{ "time": 1.1667, "name": "goblin_axe_24" }
+				]
+			}
+		}
+	},
+	"goblin_axe_hit": {
+		"slots": {
+			"goblin_axe": {
+				"attachment": [
+					{ "name": "goblin_axe_15" },
+					{ "time": 0.1667, "name": "goblin_axe_16" },
+					{ "time": 0.3333, "name": "goblin_axe_17" },
+					{ "time": 0.5, "name": "goblin_axe_18" }
+				]
+			}
+		}
+	},
+	"goblin_axe_idle": {
+		"slots": {
+			"goblin_axe": {
+				"attachment": [
+					{ "name": "goblin_axe_5" },
+					{ "time": 0.1667, "name": "goblin_axe_2" },
+					{ "time": 0.3333, "name": "goblin_axe_3" },
+					{ "time": 0.5, "name": "goblin_axe_4" },
+					{ "time": 0.6667, "name": "goblin_axe_4" }
+				]
+			}
+		}
+	},
+	"goblin_axe_run": {
+		"slots": {
+			"goblin_axe": {
+				"attachment": [
+					{ "name": "goblin_axe_5" },
+					{ "time": 0.1667, "name": "goblin_axe_6" },
+					{ "time": 0.3333, "name": "goblin_axe_7" },
+					{ "time": 0.5, "name": "goblin_axe_8" },
+					{ "time": 0.6667, "name": "goblin_axe_9" }
+				]
+			}
+		}
+	}
+}
+}

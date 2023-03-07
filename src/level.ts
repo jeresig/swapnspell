@@ -58,7 +58,7 @@ export default class Level {
             width: this.options.width,
             height: this.options.height / 2,
             x: 0,
-            y: 0,
+            y: 80,
             level: this.options.level,
             health: this.options.health,
         });
