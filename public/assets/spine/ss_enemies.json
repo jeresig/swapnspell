@@ -1,5 +1,14 @@
 {
-"skeleton": { "hash": "tG78f3QF1781Nince/OyPF/fVtI", "spine": "3.8.99", "images": "", "audio": "" },
+"skeleton": {
+	"hash": "fiIVBamqcgdd8fi+lMS1WpLX4Rc",
+	"spine": "3.8.99",
+	"x": -64,
+	"y": -24.31,
+	"width": 128,
+	"height": 128,
+	"images": "",
+	"audio": ""
+},
 "bones": [
 	{ "name": "root" },
 	{ "name": "enemy_root", "parent": "root" },
@@ -208,12 +217,45 @@
 		"slots": {
 			"goblin_axe": {
 				"attachment": [
-					{ "name": "goblin_axe_10" },
-					{ "time": 0.1667, "name": "goblin_axe_11" },
-					{ "time": 0.3333, "name": "goblin_axe_12" },
-					{ "time": 0.5, "name": "goblin_axe_13" },
-					{ "time": 0.6667, "name": "goblin_axe_14" },
-					{ "time": 0.8333, "name": "goblin_axe_14" }
+					{ "name": "goblin_axe_6" },
+					{ "time": 0.1667, "name": "goblin_axe_7" },
+					{ "time": 0.3333, "name": "goblin_axe_8" },
+					{ "time": 0.5, "name": "goblin_axe_9" },
+					{ "time": 0.6667, "name": "goblin_axe_6" },
+					{ "time": 0.8333, "name": "goblin_axe_7" },
+					{ "time": 1, "name": "goblin_axe_10" },
+					{ "time": 1.3333, "name": "goblin_axe_11" },
+					{ "time": 1.5, "name": "goblin_axe_12" },
+					{ "time": 1.6667, "name": "goblin_axe_13" },
+					{ "time": 1.8333, "name": "goblin_axe_14" },
+					{ "time": 2, "name": "goblin_axe_6" },
+					{ "time": 2.1667, "name": "goblin_axe_7" },
+					{ "time": 2.3333, "name": "goblin_axe_8" },
+					{ "time": 2.5, "name": "goblin_axe_9" },
+					{ "time": 2.6667, "name": "goblin_axe_6" },
+					{ "time": 2.8333, "name": "goblin_axe_7" },
+					{ "time": 3, "name": "goblin_axe_7" }
+				]
+			}
+		},
+		"bones": {
+			"enemy_root": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": -125, "curve": "stepped" },
+					{ "time": 1.0667, "x": -123.39, "y": -1.61, "curve": "stepped" },
+					{ "time": 1.1333, "x": -127.25, "y": 0.64, "curve": "stepped" },
+					{ "time": 1.2, "x": -123.07, "y": -0.32, "curve": "stepped" },
+					{ "time": 1.2667, "x": -126.6, "y": -2.57, "curve": "stepped" },
+					{ "time": 1.3333, "x": -125, "curve": "stepped" },
+					{ "time": 2, "x": -125, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3 }
+				],
+				"scale": [
+					{ "time": 1.9667, "curve": "stepped" },
+					{ "time": 2, "x": -1, "curve": "stepped" },
+					{ "time": 2.9667, "x": -1, "curve": "stepped" },
+					{ "time": 3 }
 				]
 			}
 		}

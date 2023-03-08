@@ -18,7 +18,7 @@ document.body.appendChild(app.view);
         spineTiles: await PIXI.Assets.load('./assets/spine/tiles.json'),
         buttonCast: await PIXI.Assets.load('./assets/spine/button_cast.json'),
         monster: await PIXI.Assets.load('./assets/spine/ss_enemies.json'),
-        hero: await PIXI.Assets.load('./assets/spine/ss_hero.json'),
+        hero: await PIXI.Assets.load('./assets/spine/ss_hero_witch.json'),
         background: await PIXI.Assets.load('./assets/spine/world_backgrounds.json'),
         book: await PIXI.Assets.load('./assets/spine/book_ui.json'),
     };

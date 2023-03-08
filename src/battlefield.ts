@@ -84,7 +84,7 @@ export default class Battlefield {
                         const damage = monsterSlot.attack();
                         setTimeout(() => {
                             this.hero.damage(damage);
-                        }, 300);
+                        }, 1500);
                     }, pos * 400);
                     pos += 1;
                 } else {

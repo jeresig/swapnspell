@@ -28,6 +28,7 @@ export default class SpellBook {
     tiles: Array<Array<Tile>>;
     _possibleLetters: Array<string> | undefined;
     button: Spine;
+    book: Spine;
 
     constructor(options: Options) {
         this.options = options;
@@ -53,6 +54,31 @@ export default class SpellBook {
         //spellbookContainer.pivot.x = width;
         //spellbookContainer.pivot.y = height / 2;
 
+        const book = this.book = new Spine(sheets.book.spineData);
+
+        const newSkin = new Skin("combined-skin");
+        // @ts-ignore This is ok
+        //newSkin.addSkin(book.spineData.findSkin(`lane_1`));
+        // @ts-ignore This is ok
+        newSkin.addSkin(book.spineData.findSkin(`default`));
+        // @ts-ignore setSkin exists
+        book.skeleton.setSkin(newSkin);
+
+        //book.skeleton.setSkinByName('lane_1');
+        book.skeleton.setSlotsToSetupPose();
+        book.state.setAnimation(0, 'book_frame', true);
+        //book.state.setAnimation(1, 'lane_bottom_cast', true);
+        //book.state.setAnimation(2, 'lane_top_cast', true);
+        //book.state.setAnimation(2, 'health_icon_hit', true);
+        //book.state.setAnimation(1, 'health_frame_scrub', true);
+        spellbookContainer.addChild(book);
+
+        //const bWRatio = tileSize / 240;
+        book.scale.x = 0.30;
+        book.scale.y = 0.30;
+        book.x = (width / 2);
+        book.y = (height / 2) - yOffset;
+
         this.activeTile = null;
         this.foundWords = [];
 
@@ -61,14 +87,12 @@ export default class SpellBook {
         const tiles: Array<Array<Tile>> = this.tiles = [];
         let pos = 0;
 
-        console.log(xOffset, yOffset)
         const tileContainer = new PIXI.Container();
-        tileContainer.x = xOffset;
-        tileContainer.y = yOffset;
+        tileContainer.x = xOffset + (width * 0.1);
+        tileContainer.y = yOffset + (height * 0.1);
         const scale = height > width ?
-            width / ((165 + spacing) * gridWidth) :
+            (width * 0.8) / ((165 + spacing) * gridWidth) :
             height / ((165 + spacing) * gridHeight);
-        console.log(scale);
         tileContainer.scale.x = scale;
         tileContainer.scale.y = scale;
         spellbookContainer.addChild(tileContainer);
@@ -371,9 +395,8 @@ export default class SpellBook {
     }
 
     render() {
-        const {container} = this;
+        const {container, book, button} = this;
         const {level: {gridHeight, gridWidth}, width, height, x, y, sheets} = this.options;
-
 
         for (let h = 0; h < gridHeight; h += 1) {
             for (let w = 0; w < gridWidth; w += 1) {
@@ -381,7 +404,6 @@ export default class SpellBook {
             }
         }
 
-        const button = this.button;
         //tile.debug = new SpineDebugRenderer();
         //tile.debug.drawDebug = true;
 

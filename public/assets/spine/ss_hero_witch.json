@@ -1,0 +1,646 @@
+{
+"skeleton": { "hash": "zcwTEdJXZwYgF7gN2DNiMqtGoeA", "spine": "3.8.99", "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "hero_root", "parent": "root" },
+	{ "name": "magic", "parent": "root", "x": 48.11, "y": 29.2 }
+],
+"slots": [
+	{ "name": "images/characters/mage_1/Witch_01", "bone": "hero_root" },
+	{ "name": "red_fire", "bone": "magic" },
+	{ "name": "blue_water", "bone": "magic" },
+	{ "name": "green_pebbles", "bone": "magic" },
+	{ "name": "default_sparkle", "bone": "magic" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"blue_water": {
+				"images/effects/droplet_01": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_02": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_03": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_04": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_05": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_06": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_07": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_08": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_09": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 },
+				"images/effects/droplet_10": { "x": -48.11, "y": -0.07, "scaleX": 1.2986, "scaleY": 1.2986, "width": 400, "height": 400 }
+			},
+			"default_sparkle": {
+				"images/effects/default_sparkle_01": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 },
+				"images/effects/default_sparkle_02": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 },
+				"images/effects/default_sparkle_03": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 },
+				"images/effects/default_sparkle_04": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 },
+				"images/effects/default_sparkle_05": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 },
+				"images/effects/default_sparkle_06": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 },
+				"images/effects/default_sparkle_07": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 },
+				"images/effects/default_sparkle_08": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 },
+				"images/effects/default_sparkle_09": { "scaleX": 1.6651, "scaleY": 1.6651, "width": 200, "height": 200 }
+			},
+			"green_pebbles": {
+				"images/effects/pebbles_01": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_02": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_03": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_04": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_05": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_06": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_07": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_08": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_09": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 },
+				"images/effects/pebbles_10": { "x": -48.38, "scaleX": 1.4055, "scaleY": 1.4055, "width": 400, "height": 400 }
+			},
+			"images/characters/mage_1/Witch_01": {
+				"images/characters/mage_1/Witch_01": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_02": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_03": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_04": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_05": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_06": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_07": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_08": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_09": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_10": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_11": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_12": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_13": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_14": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_15": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_16": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_17": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_18": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_19": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_20": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_21": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_22": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_23": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_24": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_25": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_26": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_27": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_28": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_29": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_30": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_31": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 },
+				"images/characters/mage_1/Witch_32": { "x": 45.83, "y": 35.95, "width": 220, "height": 128 }
+			},
+			"red_fire": {
+				"images/effects/fire_01": { "width": 400, "height": 400 },
+				"images/effects/fire_02": { "width": 400, "height": 400 },
+				"images/effects/fire_03": { "width": 400, "height": 400 },
+				"images/effects/fire_04": { "width": 400, "height": 400 },
+				"images/effects/fire_05": { "width": 400, "height": 400 },
+				"images/effects/fire_06": { "width": 400, "height": 400 },
+				"images/effects/fire_07": { "width": 400, "height": 400 },
+				"images/effects/fire_08": { "width": 400, "height": 400 },
+				"images/effects/fire_09": { "width": 400, "height": 400 },
+				"images/effects/fire_10": { "width": 400, "height": 400 }
+			}
+		}
+	}
+],
+"animations": {
+	"attack_1": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_05" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_06" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_07" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_08" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_01" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_10" },
+					{ "time": 1, "name": "images/characters/mage_1/Witch_11" },
+					{ "time": 1.1667, "name": "images/characters/mage_1/Witch_12" },
+					{ "time": 1.3333, "name": "images/characters/mage_1/Witch_13" },
+					{ "time": 1.5, "name": "images/characters/mage_1/Witch_14" },
+					{ "time": 1.6667, "name": "images/characters/mage_1/Witch_01" }
+				]
+			}
+		}
+	},
+	"attack_2": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_05" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_06" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_07" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_08" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_01" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_15" },
+					{ "time": 1, "name": "images/characters/mage_1/Witch_16" },
+					{ "time": 1.1667, "name": "images/characters/mage_1/Witch_17" },
+					{ "time": 1.3333, "name": "images/characters/mage_1/Witch_18" },
+					{ "time": 1.5, "name": "images/characters/mage_1/Witch_19" },
+					{ "time": 1.6667, "name": "images/characters/mage_1/Witch_01" }
+				]
+			}
+		}
+	},
+	"attack_3": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_05" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_06" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_07" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_08" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_01" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_20" },
+					{ "time": 1, "name": "images/characters/mage_1/Witch_21" },
+					{ "time": 1.1667, "name": "images/characters/mage_1/Witch_22" },
+					{ "time": 1.3333, "name": "images/characters/mage_1/Witch_23" },
+					{ "time": 1.5, "name": "images/characters/mage_1/Witch_24" },
+					{ "time": 1.6667, "name": "images/characters/mage_1/Witch_01" }
+				]
+			}
+		}
+	},
+	"cast_blue_water_1": {
+		"slots": {
+			"blue_water": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/droplet_01" },
+					{ "time": 1.1333, "name": "images/effects/droplet_02" },
+					{ "time": 1.2333, "name": "images/effects/droplet_03" },
+					{ "time": 1.3667, "name": "images/effects/droplet_04" },
+					{ "time": 1.5, "name": "images/effects/droplet_05" },
+					{ "time": 1.6, "name": "images/effects/droplet_04" },
+					{ "time": 1.7333, "name": "images/effects/droplet_06" },
+					{ "time": 1.8, "name": "images/effects/droplet_07" },
+					{ "time": 1.8667, "name": "images/effects/droplet_08" },
+					{ "time": 1.9333, "name": "images/effects/droplet_09" },
+					{ "time": 2, "name": "images/effects/droplet_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": 20, "curve": "stepped" },
+					{ "time": 1.7333, "angle": 20 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57, "y": 86.72 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 }
+				]
+			}
+		}
+	},
+	"cast_blue_water_2": {
+		"slots": {
+			"blue_water": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/droplet_01" },
+					{ "time": 1.1333, "name": "images/effects/droplet_02" },
+					{ "time": 1.2333, "name": "images/effects/droplet_03" },
+					{ "time": 1.3667, "name": "images/effects/droplet_04" },
+					{ "time": 1.5, "name": "images/effects/droplet_05" },
+					{ "time": 1.6, "name": "images/effects/droplet_04" },
+					{ "time": 1.7333, "name": "images/effects/droplet_06" },
+					{ "time": 1.8, "name": "images/effects/droplet_07" },
+					{ "time": 1.8667, "name": "images/effects/droplet_08" },
+					{ "time": 1.9333, "name": "images/effects/droplet_09" },
+					{ "time": 2, "name": "images/effects/droplet_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 }
+				]
+			}
+		}
+	},
+	"cast_blue_water_3": {
+		"slots": {
+			"blue_water": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/droplet_01" },
+					{ "time": 1.1333, "name": "images/effects/droplet_02" },
+					{ "time": 1.2333, "name": "images/effects/droplet_03" },
+					{ "time": 1.3667, "name": "images/effects/droplet_04" },
+					{ "time": 1.5, "name": "images/effects/droplet_05" },
+					{ "time": 1.6, "name": "images/effects/droplet_04" },
+					{ "time": 1.7333, "name": "images/effects/droplet_06" },
+					{ "time": 1.8, "name": "images/effects/droplet_07" },
+					{ "time": 1.8667, "name": "images/effects/droplet_08" },
+					{ "time": 1.9333, "name": "images/effects/droplet_09" },
+					{ "time": 2, "name": "images/effects/droplet_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": -20, "curve": "stepped" },
+					{ "time": 1.7333, "angle": -20 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57, "y": -65.54 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 }
+				]
+			}
+		}
+	},
+	"cast_default_sparkle_1": {
+		"slots": {
+			"default_sparkle": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/default_sparkle_01" },
+					{ "time": 1.0667, "name": "images/effects/default_sparkle_02" },
+					{ "time": 1.1333, "name": "images/effects/default_sparkle_03" },
+					{ "time": 1.2, "name": "images/effects/default_sparkle_04" },
+					{ "time": 1.2667, "name": "images/effects/default_sparkle_05" },
+					{ "time": 1.3333, "name": "images/effects/default_sparkle_06" },
+					{ "time": 1.7333, "name": "images/effects/default_sparkle_07" },
+					{ "time": 1.8333, "name": "images/effects/default_sparkle_08" },
+					{ "time": 1.9333, "name": "images/effects/default_sparkle_09" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": 20, "curve": 0.424 },
+					{ "time": 2.0667, "angle": 147.59 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57, "y": 86.72 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 },
+					{ "time": 2.0667, "x": 0.707, "y": 0.707 }
+				]
+			}
+		}
+	},
+	"cast_default_sparkle_2": {
+		"slots": {
+			"default_sparkle": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/default_sparkle_01" },
+					{ "time": 1.0667, "name": "images/effects/default_sparkle_02" },
+					{ "time": 1.1333, "name": "images/effects/default_sparkle_03" },
+					{ "time": 1.2, "name": "images/effects/default_sparkle_04" },
+					{ "time": 1.2667, "name": "images/effects/default_sparkle_05" },
+					{ "time": 1.3333, "name": "images/effects/default_sparkle_06" },
+					{ "time": 1.7333, "name": "images/effects/default_sparkle_07" },
+					{ "time": 1.8333, "name": "images/effects/default_sparkle_08" },
+					{ "time": 1.9333, "name": "images/effects/default_sparkle_09" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": 20, "curve": 0.424 },
+					{ "time": 2.0667, "angle": 147.59 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 },
+					{ "time": 2.0667, "x": 0.707, "y": 0.707 }
+				]
+			}
+		}
+	},
+	"cast_default_sparkle_3": {
+		"slots": {
+			"default_sparkle": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/default_sparkle_01" },
+					{ "time": 1.0667, "name": "images/effects/default_sparkle_02" },
+					{ "time": 1.1333, "name": "images/effects/default_sparkle_03" },
+					{ "time": 1.2, "name": "images/effects/default_sparkle_04" },
+					{ "time": 1.2667, "name": "images/effects/default_sparkle_05" },
+					{ "time": 1.3333, "name": "images/effects/default_sparkle_06" },
+					{ "time": 1.7333, "name": "images/effects/default_sparkle_07" },
+					{ "time": 1.8333, "name": "images/effects/default_sparkle_08" },
+					{ "time": 1.9333, "name": "images/effects/default_sparkle_09" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": 20, "curve": 0.424 },
+					{ "time": 2.0667, "angle": 147.59 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57, "y": -65.54 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 },
+					{ "time": 2.0667, "x": 0.707, "y": 0.707 }
+				]
+			}
+		}
+	},
+	"cast_green_pebble_1": {
+		"slots": {
+			"green_pebbles": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/pebbles_01" },
+					{ "time": 1.1333, "name": "images/effects/pebbles_02" },
+					{ "time": 1.2333, "name": "images/effects/pebbles_03" },
+					{ "time": 1.3667, "name": "images/effects/pebbles_04" },
+					{ "time": 1.5, "name": "images/effects/pebbles_05" },
+					{ "time": 1.6, "name": "images/effects/pebbles_04" },
+					{ "time": 1.7333, "name": "images/effects/pebbles_06" },
+					{ "time": 1.8, "name": "images/effects/pebbles_07" },
+					{ "time": 1.8667, "name": "images/effects/pebbles_08" },
+					{ "time": 1.9333, "name": "images/effects/pebbles_09" },
+					{ "time": 2, "name": "images/effects/pebbles_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": 20, "curve": "stepped" },
+					{ "time": 1.7333, "angle": 20 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57, "y": 86.72 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 }
+				]
+			}
+		}
+	},
+	"cast_green_pebble_2": {
+		"slots": {
+			"green_pebbles": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/pebbles_01" },
+					{ "time": 1.1333, "name": "images/effects/pebbles_02" },
+					{ "time": 1.2333, "name": "images/effects/pebbles_03" },
+					{ "time": 1.3667, "name": "images/effects/pebbles_04" },
+					{ "time": 1.5, "name": "images/effects/pebbles_05" },
+					{ "time": 1.6, "name": "images/effects/pebbles_04" },
+					{ "time": 1.7333, "name": "images/effects/pebbles_06" },
+					{ "time": 1.8, "name": "images/effects/pebbles_07" },
+					{ "time": 1.8667, "name": "images/effects/pebbles_08" },
+					{ "time": 1.9333, "name": "images/effects/pebbles_09" },
+					{ "time": 2, "name": "images/effects/pebbles_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 }
+				]
+			}
+		}
+	},
+	"cast_green_pebble_3": {
+		"slots": {
+			"green_pebbles": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/pebbles_01" },
+					{ "time": 1.1333, "name": "images/effects/pebbles_02" },
+					{ "time": 1.2333, "name": "images/effects/pebbles_03" },
+					{ "time": 1.3667, "name": "images/effects/pebbles_04" },
+					{ "time": 1.5, "name": "images/effects/pebbles_05" },
+					{ "time": 1.6, "name": "images/effects/pebbles_04" },
+					{ "time": 1.7333, "name": "images/effects/pebbles_06" },
+					{ "time": 1.8, "name": "images/effects/pebbles_07" },
+					{ "time": 1.8667, "name": "images/effects/pebbles_08" },
+					{ "time": 1.9333, "name": "images/effects/pebbles_09" },
+					{ "time": 2, "name": "images/effects/pebbles_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": -20, "curve": "stepped" },
+					{ "time": 1.7333, "angle": -20 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57, "y": -65.54 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 }
+				]
+			}
+		}
+	},
+	"cast_red_fire_1": {
+		"slots": {
+			"red_fire": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/fire_01" },
+					{ "time": 1.1333, "name": "images/effects/fire_02" },
+					{ "time": 1.2333, "name": "images/effects/fire_03" },
+					{ "time": 1.3667, "name": "images/effects/fire_04" },
+					{ "time": 1.5, "name": "images/effects/fire_05" },
+					{ "time": 1.6, "name": "images/effects/fire_04" },
+					{ "time": 1.7333, "name": "images/effects/fire_06" },
+					{ "time": 1.8, "name": "images/effects/fire_07" },
+					{ "time": 1.8667, "name": "images/effects/fire_08" },
+					{ "time": 1.9333, "name": "images/effects/fire_09" },
+					{ "time": 2, "name": "images/effects/fire_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": 20, "curve": "stepped" },
+					{ "time": 1.7333, "angle": 20 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57, "y": 86.72 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 },
+					{ "time": 2.0667, "x": 0.707, "y": 0.707 }
+				]
+			}
+		}
+	},
+	"cast_red_fire_2": {
+		"slots": {
+			"red_fire": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/fire_01" },
+					{ "time": 1.1333, "name": "images/effects/fire_02" },
+					{ "time": 1.2333, "name": "images/effects/fire_03" },
+					{ "time": 1.3667, "name": "images/effects/fire_04" },
+					{ "time": 1.5, "name": "images/effects/fire_05" },
+					{ "time": 1.6, "name": "images/effects/fire_04" },
+					{ "time": 1.7333, "name": "images/effects/fire_06" },
+					{ "time": 1.8, "name": "images/effects/fire_07" },
+					{ "time": 1.8667, "name": "images/effects/fire_08" },
+					{ "time": 1.9333, "name": "images/effects/fire_09" },
+					{ "time": 2, "name": "images/effects/fire_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 },
+					{ "time": 2.0667, "x": 0.707, "y": 0.707 }
+				]
+			}
+		}
+	},
+	"cast_red_fire_3": {
+		"slots": {
+			"red_fire": {
+				"attachment": [
+					{ "time": 1, "name": "images/effects/fire_01" },
+					{ "time": 1.1333, "name": "images/effects/fire_02" },
+					{ "time": 1.2333, "name": "images/effects/fire_03" },
+					{ "time": 1.3667, "name": "images/effects/fire_04" },
+					{ "time": 1.5, "name": "images/effects/fire_05" },
+					{ "time": 1.6, "name": "images/effects/fire_04" },
+					{ "time": 1.7333, "name": "images/effects/fire_06" },
+					{ "time": 1.8, "name": "images/effects/fire_07" },
+					{ "time": 1.8667, "name": "images/effects/fire_08" },
+					{ "time": 1.9333, "name": "images/effects/fire_09" },
+					{ "time": 2, "name": "images/effects/fire_10" },
+					{ "time": 2.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"magic": {
+				"rotate": [
+					{ "time": 1, "angle": -20, "curve": "stepped" },
+					{ "time": 1.7333, "angle": -20 }
+				],
+				"translate": [
+					{ "time": 1, "curve": 0.225 },
+					{ "time": 1.7333, "x": 155.57, "y": -65.54 }
+				],
+				"scale": [
+					{ "time": 1, "x": 0.167, "y": 0.167, "curve": 0.225, "c3": 0.75 },
+					{ "time": 1.2333, "x": 0.361, "y": 0.361, "curve": "stepped" },
+					{ "time": 1.7333, "x": 0.361, "y": 0.361 },
+					{ "time": 2.0667, "x": 0.707, "y": 0.707 }
+				]
+			}
+		}
+	},
+	"death": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_28" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_29" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_30" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_31" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_32" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_32" }
+				]
+			}
+		}
+	},
+	"hit": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_26" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_27" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_27" }
+				]
+			}
+		}
+	},
+	"idle": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_01" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_02" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_03" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_04" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_01" }
+				]
+			}
+		}
+	},
+	"run": {
+		"slots": {
+			"images/characters/mage_1/Witch_01": {
+				"attachment": [
+					{ "name": "images/characters/mage_1/Witch_05" },
+					{ "time": 0.1667, "name": "images/characters/mage_1/Witch_06" },
+					{ "time": 0.3333, "name": "images/characters/mage_1/Witch_07" },
+					{ "time": 0.5, "name": "images/characters/mage_1/Witch_08" },
+					{ "time": 0.6667, "name": "images/characters/mage_1/Witch_09" },
+					{ "time": 0.8333, "name": "images/characters/mage_1/Witch_05" }
+				]
+			}
+		}
+	}
+}
+}
