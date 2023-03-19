@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "reUPqFoIlAnZ5oesAAQ2fJzpdxQ", "spine": "3.8.99", "images": "", "audio": "" },
+"skeleton": { "hash": "PbExFUqD25M", "spine": "4.1.19", "images": "", "audio": "" },
 "bones": [
 	{ "name": "root" },
 	{ "name": "cast_base", "parent": "root" },
@@ -197,8 +197,11 @@
 	"button_cast_activate": {
 		"slots": {
 			"big_glow": {
-				"color": [
-					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.025, 1, 0.075, 1, 0.025, 1, 0.075, 1, 0.025, 1, 0.075, 1, 0.025, 0, 0.075, 0.36 ]
+					},
 					{ "time": 0.1, "color": "ffffff5b", "curve": "stepped" },
 					{ "time": 0.2667, "color": "ffffff5b" },
 					{ "time": 0.3667, "color": "ffffff00" }
@@ -208,17 +211,17 @@
 				]
 			},
 			"border": {
-				"color": [
+				"rgba": [
 					{ "time": 1.5, "color": "ffffffff" },
 					{ "time": 1.6, "color": "ffffff00" }
 				],
 				"attachment": [
 					{ "time": 0.0333, "name": "images/cast_button/cast_button_border" },
-					{ "time": 1.6, "name": null }
+					{ "time": 1.6 }
 				]
 			},
 			"border2": {
-				"color": [
+				"rgba": [
 					{ "time": 0.0333, "color": "de38ffff" },
 					{ "time": 0.2, "color": "df21ff00" }
 				],
@@ -234,7 +237,7 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffffff", "curve": "stepped" },
 					{ "time": 1.6667, "color": "ffffffff" },
 					{ "time": 1.8333, "color": "e57607ff" }
@@ -259,7 +262,7 @@
 					{ "time": 1.1667, "name": "images/cast_button/cast_side_effect_11" },
 					{ "time": 1.2333, "name": "images/cast_button/cast_side_effect_12" },
 					{ "time": 1.3, "name": "images/cast_button/cast_side_effect_13" },
-					{ "time": 1.3667, "name": null }
+					{ "time": 1.3667 }
 				]
 			},
 			"side_magic_2": {
@@ -277,7 +280,7 @@
 					{ "time": 1.1667, "name": "images/cast_button/cast_side_effect_11" },
 					{ "time": 1.2333, "name": "images/cast_button/cast_side_effect_12" },
 					{ "time": 1.3, "name": "images/cast_button/cast_side_effect_13" },
-					{ "time": 1.3667, "name": null }
+					{ "time": 1.3667 }
 				]
 			},
 			"side_magic_3": {
@@ -295,7 +298,7 @@
 					{ "time": 1.1667, "name": "images/cast_button/cast_side_effect_11" },
 					{ "time": 1.2333, "name": "images/cast_button/cast_side_effect_12" },
 					{ "time": 1.3, "name": "images/cast_button/cast_side_effect_13" },
-					{ "time": 1.3667, "name": null }
+					{ "time": 1.3667 }
 				]
 			},
 			"side_magic_4": {
@@ -313,7 +316,7 @@
 					{ "time": 1.1667, "name": "images/cast_button/cast_side_effect_11" },
 					{ "time": 1.2333, "name": "images/cast_button/cast_side_effect_12" },
 					{ "time": 1.3, "name": "images/cast_button/cast_side_effect_13" },
-					{ "time": 1.3667, "name": null }
+					{ "time": 1.3667 }
 				]
 			},
 			"side_magic_left": {
@@ -326,7 +329,7 @@
 					{ "time": 0.5, "name": "images/cast_button/cast_symbol_glow_6" },
 					{ "time": 0.5667, "name": "images/cast_button/cast_symbol_glow_7" },
 					{ "time": 0.6333, "name": "images/cast_button/cast_symbol_glow_8" },
-					{ "time": 0.7, "name": null }
+					{ "time": 0.7 }
 				]
 			},
 			"side_magic_left2": {
@@ -339,7 +342,7 @@
 					{ "time": 0.5, "name": "images/cast_button/cast_symbol_glow_6" },
 					{ "time": 0.5667, "name": "images/cast_button/cast_symbol_glow_7" },
 					{ "time": 0.6333, "name": "images/cast_button/cast_symbol_glow_8" },
-					{ "time": 0.7, "name": null }
+					{ "time": 0.7 }
 				]
 			}
 		},
@@ -347,14 +350,25 @@
 			"main": {
 				"translate": [
 					{ "curve": "stepped" },
-					{ "time": 1.5, "curve": 0.25, "c3": 0.75 },
+					{
+						"time": 1.5,
+						"curve": [ 1.525, 0, 1.575, 0, 1.525, 0, 1.575, 6.07 ]
+					},
 					{ "time": 1.6, "y": 6.07 },
 					{ "time": 1.6667, "y": -1.21 }
 				],
 				"scale": [
 					{ "curve": "stepped" },
-					{ "time": 1.5, "curve": 0.25, "c3": 0.75 },
-					{ "time": 1.6, "x": 0.976, "y": 1.093, "curve": 0.25, "c3": 0.75 },
+					{
+						"time": 1.5,
+						"curve": [ 1.525, 1, 1.575, 0.976, 1.525, 1, 1.575, 1.093 ]
+					},
+					{
+						"time": 1.6,
+						"x": 0.976,
+						"y": 1.093,
+						"curve": [ 1.617, 0.976, 1.65, 1, 1.617, 1.093, 1.65, 1 ]
+					},
 					{ "time": 1.6667 }
 				]
 			},
@@ -381,7 +395,10 @@
 			},
 			"border_scale": {
 				"scale": [
-					{ "time": 0.0333, "curve": 0, "c2": 0.47, "c3": 0.75 },
+					{
+						"time": 0.0333,
+						"curve": [ 0.033, 1.163, 0.158, 1.348, 0.033, 1.18, 0.158, 1.385 ]
+					},
 					{ "time": 0.2, "x": 1.348, "y": 1.385 }
 				]
 			}
@@ -390,7 +407,7 @@
 	"button_cast_idle": {
 		"slots": {
 			"big_glow": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffff00" }
 				],
 				"attachment": [
@@ -403,7 +420,7 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "e57507ff" }
 				],
 				"attachment": [
@@ -441,7 +458,7 @@
 	"button_cast_idle_to_ready": {
 		"slots": {
 			"big_glow": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffff00", "curve": "stepped" },
 					{ "time": 0.3333, "color": "ffffff00" }
 				],
@@ -457,7 +474,7 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "e57607ff" },
 					{ "time": 0.3333, "color": "ffffffff" }
 				],
@@ -467,9 +484,16 @@
 				]
 			},
 			"shimmer": {
-				"color": [
-					{ "color": "ffffff0e", "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.2667, "color": "ffffff43", "curve": 0.25, "c3": 0.75 },
+				"rgba": [
+					{
+						"color": "ffffff0e",
+						"curve": [ 0.067, 1, 0.2, 1, 0.067, 1, 0.2, 1, 0.067, 1, 0.2, 1, 0.067, 0.06, 0.2, 0.26 ]
+					},
+					{
+						"time": 0.2667,
+						"color": "ffffff43",
+						"curve": [ 0.333, 1, 0.467, 1, 0.333, 1, 0.467, 1, 0.333, 1, 0.467, 1, 0.333, 0.26, 0.467, 0.05 ]
+					},
 					{ "time": 0.5333, "color": "ffffff0d" }
 				],
 				"attachment": [
@@ -481,7 +505,7 @@
 					{ "time": 0.3333, "name": "images/cast_button/cast_shimmer_6" },
 					{ "time": 0.4, "name": "images/cast_button/cast_shimmer_7" },
 					{ "time": 0.4667, "name": "images/cast_button/cast_shimmer_8" },
-					{ "time": 0.5333, "name": null }
+					{ "time": 0.5333 }
 				]
 			}
 		},
@@ -521,9 +545,16 @@
 	"button_cast_ready": {
 		"slots": {
 			"big_glow": {
-				"color": [
-					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.5, "color": "ffffff1d", "curve": 0.25, "c3": 0.75 },
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.125, 1, 0.375, 1, 0.125, 1, 0.375, 1, 0.125, 1, 0.375, 1, 0.125, 0, 0.375, 0.12 ]
+					},
+					{
+						"time": 0.5,
+						"color": "ffffff1d",
+						"curve": [ 0.625, 1, 0.875, 1, 0.625, 1, 0.875, 1, 0.625, 1, 0.875, 1, 0.625, 0.12, 0.875, 0 ]
+					},
 					{ "time": 1, "color": "ffffff00" }
 				],
 				"attachment": [
@@ -536,7 +567,7 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffffff" }
 				],
 				"attachment": [
@@ -560,8 +591,15 @@
 					{ "y": 25.66 }
 				],
 				"scale": [
-					{ "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.5, "x": 1.052, "y": 1.052, "curve": 0.25, "c3": 0.75 },
+					{
+						"curve": [ 0.125, 1, 0.375, 1.052, 0.125, 1, 0.375, 1.052 ]
+					},
+					{
+						"time": 0.5,
+						"x": 1.052,
+						"y": 1.052,
+						"curve": [ 0.625, 1.052, 0.875, 1, 0.625, 1.052, 0.875, 1 ]
+					},
 					{ "time": 1 }
 				]
 			},
@@ -582,7 +620,7 @@
 	"button_cast_to_pass": {
 		"slots": {
 			"big_glow": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffff00", "curve": "stepped" },
 					{ "time": 0.6, "color": "ffffff00" }
 				],
@@ -593,52 +631,52 @@
 			},
 			"button_swap_1": {
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.1333, "name": "images/cast_button/cast_slice_1" },
-					{ "time": 0.6, "name": null }
+					{ "time": 0.6 }
 				]
 			},
 			"button_swap_2": {
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.1333, "name": "images/cast_button/cast_slice_2" },
-					{ "time": 0.5333, "name": null },
-					{ "time": 0.6, "name": null }
+					{ "time": 0.5333 },
+					{ "time": 0.6 }
 				]
 			},
 			"button_swap_3": {
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.1333, "name": "images/cast_button/cast_slice_3" },
-					{ "time": 0.4667, "name": null }
+					{ "time": 0.4667 }
 				]
 			},
 			"button_swap_4": {
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.1333, "name": "images/cast_button/cast_slice_4" },
-					{ "time": 0.4, "name": null }
+					{ "time": 0.4 }
 				]
 			},
 			"button_swap_5": {
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.1333, "name": "images/cast_button/cast_slice_5" },
-					{ "time": 0.3333, "name": null }
+					{ "time": 0.3333 }
 				]
 			},
 			"button_swap_6": {
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.1333, "name": "images/cast_button/cast_slice_6" },
-					{ "time": 0.2667, "name": null }
+					{ "time": 0.2667 }
 				]
 			},
 			"button_swap_7": {
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.0667, "name": "images/cast_button/cast_slice_7" },
-					{ "time": 0.2, "name": null }
+					{ "time": 0.2 }
 				]
 			},
 			"images/cast_button/cast_button_default": {
@@ -649,11 +687,19 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "e57507ff", "curve": "stepped" },
 					{ "time": 0.1, "color": "e57507ff" },
-					{ "time": 0.2333, "color": "e5750700", "curve": 0.485, "c4": 0.59 },
-					{ "time": 0.4, "color": "0092ad00", "curve": 0.317, "c2": 0.33, "c3": 0.667, "c4": 0.67 },
+					{
+						"time": 0.2333,
+						"color": "e5750700",
+						"curve": [ 0.314, 0.9, 0.4, 0.37, 0.314, 0.46, 0.4, 0.53, 0.314, 0.03, 0.4, 0.41, 0.314, 0, 0.4, 0 ]
+					},
+					{
+						"time": 0.4,
+						"color": "0092ad00",
+						"curve": [ 0.463, 0, 0.533, 0, 0.463, 0.57, 0.533, 0.57, 0.463, 0.68, 0.533, 0.68, 0.463, 0.33, 0.533, 0.67 ]
+					},
 					{ "time": 0.6, "color": "0092adff" }
 				],
 				"attachment": [
@@ -664,11 +710,11 @@
 				]
 			},
 			"shimmer": {
-				"color": [
+				"rgba": [
 					{ "time": 0.6, "color": "ffffff63" }
 				],
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.0667, "name": "images/cast_button/cast_shimmer_9" },
 					{ "time": 0.1333, "name": "images/cast_button/cast_shimmer_8" },
 					{ "time": 0.2, "name": "images/cast_button/cast_shimmer_7" },
@@ -677,11 +723,11 @@
 					{ "time": 0.4, "name": "images/cast_button/cast_shimmer_4" },
 					{ "time": 0.4667, "name": "images/cast_button/cast_shimmer_3" },
 					{ "time": 0.5333, "name": "images/cast_button/cast_shimmer_2" },
-					{ "time": 0.6, "name": null }
+					{ "time": 0.6 }
 				]
 			},
 			"side_magic_left": {
-				"color": [
+				"rgba": [
 					{ "time": 0.1333, "color": "7be5ffff" }
 				],
 				"attachment": [
@@ -689,7 +735,7 @@
 				]
 			},
 			"side_magic_left2": {
-				"color": [
+				"rgba": [
 					{ "time": 0.1333, "color": "7be5ffff" }
 				],
 				"attachment": [
@@ -736,8 +782,11 @@
 	"button_pass_activate": {
 		"slots": {
 			"big_glow": {
-				"color": [
-					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.025, 1, 0.075, 1, 0.025, 1, 0.075, 1, 0.025, 1, 0.075, 1, 0.025, 0, 0.075, 0.36 ]
+					},
 					{ "time": 0.1, "color": "ffffff5b", "curve": "stepped" },
 					{ "time": 0.2667, "color": "ffffff5b" },
 					{ "time": 0.3667, "color": "ffffff00" }
@@ -747,17 +796,17 @@
 				]
 			},
 			"border": {
-				"color": [
+				"rgba": [
 					{ "time": 0.9, "color": "ffffffff" },
 					{ "time": 1, "color": "ffffff00" }
 				],
 				"attachment": [
 					{ "time": 0.0333, "name": "images/cast_button/cast_button_border" },
-					{ "time": 1, "name": null }
+					{ "time": 1 }
 				]
 			},
 			"border2": {
-				"color": [
+				"rgba": [
 					{ "time": 0.0333, "color": "37c2ffff" },
 					{ "time": 0.2, "color": "2094ff00" }
 				],
@@ -773,7 +822,7 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "0092adff" },
 					{ "time": 0.0333, "color": "0594aeff" },
 					{ "time": 0.1333, "color": "ffffffff", "curve": "stepped" },
@@ -786,7 +835,7 @@
 				]
 			},
 			"side_magic_left": {
-				"color": [
+				"rgba": [
 					{ "color": "7be5ffff", "curve": "stepped" },
 					{ "time": 0.1, "color": "7be5ffff" },
 					{ "time": 0.2, "color": "ffffffff", "curve": "stepped" },
@@ -798,7 +847,7 @@
 				]
 			},
 			"side_magic_left2": {
-				"color": [
+				"rgba": [
 					{ "color": "7be5ffff", "curve": "stepped" },
 					{ "time": 0.1, "color": "7be5ffff" },
 					{ "time": 0.2, "color": "ffffffff", "curve": "stepped" },
@@ -814,14 +863,25 @@
 			"main": {
 				"translate": [
 					{ "curve": "stepped" },
-					{ "time": 0.9, "curve": 0.25, "c3": 0.75 },
+					{
+						"time": 0.9,
+						"curve": [ 0.925, 0, 0.975, 0, 0.925, 0, 0.975, 6.07 ]
+					},
 					{ "time": 1, "y": 6.07 },
 					{ "time": 1.0667, "y": -1.21 }
 				],
 				"scale": [
 					{ "curve": "stepped" },
-					{ "time": 0.9, "curve": 0.25, "c3": 0.75 },
-					{ "time": 1, "x": 0.976, "y": 1.093, "curve": 0.25, "c3": 0.75 },
+					{
+						"time": 0.9,
+						"curve": [ 0.925, 1, 0.975, 0.976, 0.925, 1, 0.975, 1.093 ]
+					},
+					{
+						"time": 1,
+						"x": 0.976,
+						"y": 1.093,
+						"curve": [ 1.017, 0.976, 1.05, 1, 1.017, 1.093, 1.05, 1 ]
+					},
 					{ "time": 1.0667 }
 				]
 			},
@@ -863,7 +923,10 @@
 			},
 			"border_scale": {
 				"scale": [
-					{ "time": 0.0333, "curve": 0, "c2": 0.47, "c3": 0.75 },
+					{
+						"time": 0.0333,
+						"curve": [ 0.033, 1.163, 0.158, 1.348, 0.033, 1.18, 0.158, 1.385 ]
+					},
 					{ "time": 0.2, "x": 1.348, "y": 1.385 }
 				]
 			}
@@ -872,7 +935,7 @@
 	"button_pass_idle": {
 		"slots": {
 			"big_glow": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffff00" }
 				],
 				"attachment": [
@@ -885,7 +948,7 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "0093adff" }
 				],
 				"attachment": [
@@ -893,7 +956,7 @@
 				]
 			},
 			"side_magic_left": {
-				"color": [
+				"rgba": [
 					{ "color": "7be5ffff" }
 				],
 				"attachment": [
@@ -901,7 +964,7 @@
 				]
 			},
 			"side_magic_left2": {
-				"color": [
+				"rgba": [
 					{ "color": "7be5ffff" }
 				],
 				"attachment": [
@@ -939,7 +1002,7 @@
 	"button_pass_ready": {
 		"slots": {
 			"big_glow": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffff00" }
 				],
 				"attachment": [
@@ -952,7 +1015,7 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "0092adff" }
 				],
 				"attachment": [
@@ -960,7 +1023,7 @@
 				]
 			},
 			"side_magic_left": {
-				"color": [
+				"rgba": [
 					{ "color": "7be5ffff" }
 				],
 				"attachment": [
@@ -968,7 +1031,7 @@
 				]
 			},
 			"side_magic_left2": {
-				"color": [
+				"rgba": [
 					{ "color": "7be5ffff" }
 				],
 				"attachment": [
@@ -1006,7 +1069,7 @@
 	"button_pass_to_cast": {
 		"slots": {
 			"big_glow": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffff00", "curve": "stepped" },
 					{ "time": 0.6, "color": "ffffff00" }
 				],
@@ -1018,43 +1081,43 @@
 			"button_swap_1": {
 				"attachment": [
 					{ "time": 0.0667, "name": "images/cast_button/cast_slice_1" },
-					{ "time": 0.5333, "name": null }
+					{ "time": 0.5333 }
 				]
 			},
 			"button_swap_2": {
 				"attachment": [
 					{ "time": 0.1333, "name": "images/cast_button/cast_slice_2" },
-					{ "time": 0.5333, "name": null }
+					{ "time": 0.5333 }
 				]
 			},
 			"button_swap_3": {
 				"attachment": [
 					{ "time": 0.2, "name": "images/cast_button/cast_slice_3" },
-					{ "time": 0.5333, "name": null }
+					{ "time": 0.5333 }
 				]
 			},
 			"button_swap_4": {
 				"attachment": [
 					{ "time": 0.2667, "name": "images/cast_button/cast_slice_4" },
-					{ "time": 0.5333, "name": null }
+					{ "time": 0.5333 }
 				]
 			},
 			"button_swap_5": {
 				"attachment": [
 					{ "time": 0.3333, "name": "images/cast_button/cast_slice_5" },
-					{ "time": 0.5333, "name": null }
+					{ "time": 0.5333 }
 				]
 			},
 			"button_swap_6": {
 				"attachment": [
 					{ "time": 0.4, "name": "images/cast_button/cast_slice_6" },
-					{ "time": 0.5333, "name": null }
+					{ "time": 0.5333 }
 				]
 			},
 			"button_swap_7": {
 				"attachment": [
 					{ "time": 0.4667, "name": "images/cast_button/cast_slice_7" },
-					{ "time": 0.5333, "name": null }
+					{ "time": 0.5333 }
 				]
 			},
 			"images/cast_button/cast_button_default": {
@@ -1066,10 +1129,18 @@
 				]
 			},
 			"images/cast_button/cast_text": {
-				"color": [
+				"rgba": [
 					{ "color": "0093adff" },
-					{ "time": 0.2333, "color": "00bbff00", "curve": 0.485, "c4": 0.59 },
-					{ "time": 0.4, "color": "ffffff00", "curve": 0.317, "c2": 0.33, "c3": 0.667, "c4": 0.67 },
+					{
+						"time": 0.2333,
+						"color": "00bbff00",
+						"curve": [ 0.314, 0, 0.4, 0.59, 0.314, 0.73, 0.4, 0.89, 0.314, 1, 0.4, 1, 0.314, 0, 0.4, 0 ]
+					},
+					{
+						"time": 0.4,
+						"color": "ffffff00",
+						"curve": [ 0.463, 1, 0.533, 1, 0.463, 1, 0.533, 1, 0.463, 1, 0.533, 1, 0.463, 0.33, 0.533, 0.67 ]
+					},
 					{ "time": 0.6, "color": "ffffffff" }
 				],
 				"attachment": [
@@ -1080,11 +1151,11 @@
 				]
 			},
 			"shimmer": {
-				"color": [
+				"rgba": [
 					{ "color": "ffffff63" }
 				],
 				"attachment": [
-					{ "name": null },
+					{},
 					{ "time": 0.0667, "name": "images/cast_button/cast_shimmer_2" },
 					{ "time": 0.1333, "name": "images/cast_button/cast_shimmer_3" },
 					{ "time": 0.2, "name": "images/cast_button/cast_shimmer_4" },
@@ -1093,25 +1164,25 @@
 					{ "time": 0.4, "name": "images/cast_button/cast_shimmer_7" },
 					{ "time": 0.4667, "name": "images/cast_button/cast_shimmer_8" },
 					{ "time": 0.5333, "name": "images/cast_button/cast_shimmer_9" },
-					{ "time": 0.6, "name": null }
+					{ "time": 0.6 }
 				]
 			},
 			"side_magic_left": {
-				"color": [
+				"rgba": [
 					{ "color": "7be5ffff" }
 				],
 				"attachment": [
 					{ "name": "images/cast_button/pass_icon" },
-					{ "time": 0.4667, "name": null }
+					{ "time": 0.4667 }
 				]
 			},
 			"side_magic_left2": {
-				"color": [
+				"rgba": [
 					{ "color": "7be5ffff" }
 				],
 				"attachment": [
 					{ "name": "images/cast_button/pass_icon2" },
-					{ "time": 0.4667, "name": null }
+					{ "time": 0.4667 }
 				]
 			}
 		},

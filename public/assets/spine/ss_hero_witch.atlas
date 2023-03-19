@@ -1,503 +1,261 @@
-
 ss_hero_witch.png
-size: 1468,1062
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
+size:3892,413
+filter:Linear,Linear
+pma:true
 images/characters/mage_1/Witch_01
-  rotate: true
-  xy: 876, 202
-  size: 76, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3636,217,76,92
+offsets:24,24,220,128
 images/characters/mage_1/Witch_02
-  rotate: true
-  xy: 1198, 178
-  size: 80, 88
-  orig: 220, 128
-  offset: 20, 24
-  index: -1
+bounds:3728,33,80,88
+offsets:20,24,220,128
 images/characters/mage_1/Witch_03
-  rotate: false
-  xy: 1304, 260
-  size: 76, 88
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3810,73,76,88
+offsets:24,24,220,128
 images/characters/mage_1/Witch_04
-  rotate: true
-  xy: 782, 146
-  size: 76, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3660,319,76,92
+offsets:24,24,220,128
 images/characters/mage_1/Witch_05
-  rotate: true
-  xy: 970, 80
-  size: 96, 100
-  orig: 220, 128
-  offset: 16, 24
-  index: -1
+bounds:3478,99,96,100
+offsets:16,24,220,128
 images/characters/mage_1/Witch_06
-  rotate: false
-  xy: 1072, 80
-  size: 100, 96
-  orig: 220, 128
-  offset: 12, 24
-  index: -1
+bounds:3538,209,100,96
+offsets:12,24,220,128
+rotate:90
 images/characters/mage_1/Witch_07
-  rotate: false
-  xy: 1143, 452
-  size: 100, 100
-  orig: 220, 128
-  offset: 12, 24
-  index: -1
+bounds:3436,201,100,100
+offsets:12,24,220,128
 images/characters/mage_1/Witch_08
-  rotate: true
-  xy: 1174, 80
-  size: 96, 100
-  orig: 220, 128
-  offset: 16, 24
-  index: -1
+bounds:3562,311,96,100
+offsets:16,24,220,128
 images/characters/mage_1/Witch_09
-  rotate: false
-  xy: 1212, 350
-  size: 100, 100
-  orig: 220, 128
-  offset: 12, 24
-  index: -1
+bounds:3460,311,100,100
+offsets:12,24,220,128
 images/characters/mage_1/Witch_10
-  rotate: true
-  xy: 876, 116
-  size: 84, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:2,3,84,92
+offsets:24,24,220,128
+rotate:90
 images/characters/mage_1/Witch_11
-  rotate: true
-  xy: 1245, 465
-  size: 116, 92
-  orig: 220, 128
-  offset: 20, 24
-  index: -1
+bounds:3190,3,116,92
+offsets:20,24,220,128
+rotate:90
 images/characters/mage_1/Witch_12
-  rotate: false
-  xy: 1094, 358
-  size: 116, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3284,171,116,92
+offsets:24,24,220,128
+rotate:90
 images/characters/mage_1/Witch_13
-  rotate: true
-  xy: 876, 280
-  size: 148, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3188,263,148,92
+offsets:24,24,220,128
+rotate:90
 images/characters/mage_1/Witch_14
-  rotate: true
-  xy: 782, 224
-  size: 164, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:2087,9,164,92
+offsets:24,24,220,128
+rotate:90
 images/characters/mage_1/Witch_15
-  rotate: false
-  xy: 1354, 92
-  size: 84, 88
-  orig: 220, 128
-  offset: 20, 24
-  index: -1
+bounds:96,3,84,88
+offsets:20,24,220,128
+rotate:90
 images/characters/mage_1/Witch_16
-  rotate: true
-  xy: 1210, 260
-  size: 88, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3478,5,88,92
+offsets:24,24,220,128
 images/characters/mage_1/Witch_17
-  rotate: true
-  xy: 1345, 585
-  size: 112, 96
-  orig: 220, 128
-  offset: 24, 20
-  index: -1
+bounds:1052,2,112,96
+offsets:24,20,220,128
+rotate:90
 images/characters/mage_1/Witch_18
-  rotate: false
-  xy: 970, 236
-  size: 132, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:1150,6,132,92
+offsets:24,24,220,128
+rotate:90
 images/characters/mage_1/Witch_19
-  rotate: true
-  xy: 735, 390
-  size: 140, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3190,121,140,92
+offsets:24,24,220,128
+rotate:90
 images/characters/mage_1/Witch_20
-  rotate: false
-  xy: 1339, 493
-  size: 84, 88
-  orig: 220, 128
-  offset: 20, 24
-  index: -1
+bounds:186,3,84,88
+offsets:20,24,220,128
+rotate:90
 images/characters/mage_1/Witch_21
-  rotate: true
-  xy: 969, 2
-  size: 76, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3650,21,76,92
+offsets:24,24,220,128
 images/characters/mage_1/Witch_22
-  rotate: true
-  xy: 1063, 2
-  size: 76, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3658,123,76,92
+offsets:24,24,220,128
 images/characters/mage_1/Witch_23
-  rotate: true
-  xy: 1157, 2
-  size: 76, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3714,225,76,92
+offsets:24,24,220,128
 images/characters/mage_1/Witch_24
-  rotate: true
-  xy: 1251, 2
-  size: 76, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3738,319,76,92
+offsets:24,24,220,128
 images/characters/mage_1/Witch_25
-  rotate: true
-  xy: 1104, 178
-  size: 80, 92
-  orig: 220, 128
-  offset: 20, 24
-  index: -1
+bounds:3568,5,80,92
+offsets:20,24,220,128
 images/characters/mage_1/Witch_26
-  rotate: false
-  xy: 1276, 84
-  size: 76, 92
-  orig: 220, 128
-  offset: 20, 24
-  index: -1
+bounds:3792,241,76,92
+offsets:20,24,220,128
+rotate:90
 images/characters/mage_1/Witch_27
-  rotate: true
-  xy: 1288, 182
-  size: 76, 92
-  orig: 220, 128
-  offset: 24, 24
-  index: -1
+bounds:3792,163,76,92
+offsets:24,24,220,128
+rotate:90
 images/characters/mage_1/Witch_28
-  rotate: false
-  xy: 1368, 403
-  size: 84, 88
-  orig: 220, 128
-  offset: 28, 24
-  index: -1
+bounds:276,4,84,88
+offsets:28,24,220,128
+rotate:90
 images/characters/mage_1/Witch_29
-  rotate: false
-  xy: 1345, 2
-  size: 92, 80
-  orig: 220, 128
-  offset: 32, 24
-  index: -1
+bounds:3576,115,92,80
+offsets:32,24,220,128
+rotate:90
 images/characters/mage_1/Witch_30
-  rotate: true
-  xy: 1143, 680
-  size: 104, 64
-  orig: 220, 128
-  offset: 40, 20
-  index: -1
+bounds:858,2,104,64
+offsets:40,20,220,128
+rotate:90
 images/characters/mage_1/Witch_31
-  rotate: false
-  xy: 970, 178
-  size: 108, 56
-  orig: 220, 128
-  offset: 44, 20
-  index: -1
+bounds:3378,179,108,56
+offsets:44,20,220,128
+rotate:90
 images/characters/mage_1/Witch_32
-  rotate: true
-  xy: 1314, 355
-  size: 108, 52
-  orig: 220, 128
-  offset: 44, 20
-  index: -1
+bounds:3406,303,108,52
+offsets:44,20,220,128
+rotate:90
 images/effects/default_sparkle_01
-  rotate: false
-  xy: 1382, 241
-  size: 74, 74
-  orig: 200, 200
-  offset: 61, 61
-  index: -1
+bounds:3816,337,74,74
+offsets:61,61,200,200
 images/effects/default_sparkle_02
-  rotate: false
-  xy: 1382, 317
-  size: 84, 84
-  orig: 200, 200
-  offset: 56, 56
-  index: -1
+bounds:366,4,84,84
+offsets:56,56,200,200
 images/effects/default_sparkle_03
-  rotate: true
-  xy: 869, 26
-  size: 88, 98
-  orig: 200, 200
-  offset: 54, 49
-  index: -1
+bounds:660,2,88,98
+offsets:54,49,200,200
+rotate:90
 images/effects/default_sparkle_04
-  rotate: true
-  xy: 761, 54
-  size: 90, 106
-  orig: 200, 200
-  offset: 53, 45
-  index: -1
+bounds:3386,71,90,106
+offsets:53,45,200,200
 images/effects/default_sparkle_05
-  rotate: false
-  xy: 1243, 583
-  size: 100, 114
-  orig: 200, 200
-  offset: 48, 41
-  index: -1
+bounds:3284,55,100,114
+offsets:48,41,200,200
 images/effects/default_sparkle_06
-  rotate: false
-  xy: 970, 330
-  size: 122, 122
-  orig: 200, 200
-  offset: 37, 37
-  index: -1
+bounds:3282,289,122,122
+offsets:37,37,200,200
 images/effects/default_sparkle_07
-  rotate: false
-  xy: 829, 430
-  size: 126, 102
-  orig: 200, 200
-  offset: 35, 47
-  index: -1
+bounds:924,4,126,102
+offsets:35,47,200,200
 images/effects/default_sparkle_08
-  rotate: true
-  xy: 1143, 554
-  size: 124, 98
-  orig: 200, 200
-  offset: 36, 49
-  index: -1
+bounds:1244,14,124,98
+offsets:36,49,200,200
+rotate:90
 images/effects/default_sparkle_09
-  rotate: false
-  xy: 1104, 260
-  size: 104, 96
-  orig: 200, 200
-  offset: 46, 50
-  index: -1
+bounds:760,2,104,96
+offsets:46,50,200,200
+rotate:90
 images/effects/droplet_01
-  rotate: true
-  xy: 564, 686
-  size: 188, 150
-  orig: 400, 400
-  offset: 171, 125
-  index: -1
+bounds:2583,6,188,150
+offsets:171,125,400,400
+rotate:90
 images/effects/droplet_02
-  rotate: true
-  xy: 193, 2
-  size: 204, 156
-  orig: 400, 400
-  offset: 160, 122
-  index: -1
+bounds:2701,207,204,156
+offsets:160,122,400,400
+rotate:90
 images/effects/droplet_03
-  rotate: false
-  xy: 563, 532
-  size: 215, 152
-  orig: 400, 400
-  offset: 148, 124
-  index: -1
+bounds:2547,196,215,152
+offsets:148,124,400,400
+rotate:90
 images/effects/droplet_04
-  rotate: true
-  xy: 630, 209
-  size: 179, 150
-  orig: 400, 400
-  offset: 177, 125
-  index: -1
+bounds:3036,232,179,150
+offsets:177,125,400,400
+rotate:90
 images/effects/droplet_05
-  rotate: false
-  xy: 957, 454
-  size: 184, 152
-  orig: 400, 400
-  offset: 174, 124
-  index: -1
+bounds:2877,38,184,152
+offsets:174,124,400,400
+rotate:90
 images/effects/droplet_06
-  rotate: true
-  xy: 460, 210
-  size: 172, 168
-  orig: 400, 400
-  offset: 193, 114
-  index: -1
+bounds:1737,5,172,168
+offsets:193,114,400,400
 images/effects/droplet_07
-  rotate: false
-  xy: 351, 6
-  size: 140, 200
-  orig: 400, 400
-  offset: 225, 98
-  index: -1
+bounds:1344,9,140,200
+offsets:225,98,400,400
+rotate:90
 images/effects/droplet_08
-  rotate: true
-  xy: 969, 786
-  size: 110, 244
-  orig: 400, 400
-  offset: 255, 72
-  index: -1
+bounds:1416,167,110,244
+offsets:255,72,400,400
 images/effects/droplet_09
-  rotate: false
-  xy: 179, 208
-  size: 113, 260
-  orig: 400, 400
-  offset: 252, 64
-  index: -1
+bounds:1301,151,113,260
+offsets:252,64,400,400
 images/effects/droplet_10
-  rotate: false
-  xy: 493, 2
-  size: 82, 206
-  orig: 400, 400
-  offset: 283, 91
-  index: -1
+bounds:452,7,82,206
+offsets:283,91,400,400
+rotate:90
 images/effects/fire_01
-  rotate: false
-  xy: 2, 470
-  size: 303, 200
-  orig: 400, 400
-  offset: 61, 96
-  index: -1
+bounds:758,108,303,200
+offsets:61,96,400,400
+rotate:90
 images/effects/fire_02
-  rotate: false
-  xy: 2, 672
-  size: 321, 186
-  orig: 400, 400
-  offset: 41, 103
-  index: -1
+bounds:204,90,321,186
+offsets:41,103,400,400
+rotate:90
 images/effects/fire_03
-  rotate: false
-  xy: 648, 882
-  size: 319, 178
-  orig: 400, 400
-  offset: 42, 107
-  index: -1
+bounds:578,92,319,178
+offsets:42,107,400,400
+rotate:90
 images/effects/fire_04
-  rotate: false
-  xy: 326, 876
-  size: 320, 184
-  orig: 400, 400
-  offset: 42, 104
-  index: -1
+bounds:392,91,320,184
+offsets:42,104,400,400
+rotate:90
 images/effects/fire_05
-  rotate: false
-  xy: 2, 860
-  size: 322, 200
-  orig: 400, 400
-  offset: 42, 100
-  index: -1
+bounds:2,89,322,200
+offsets:42,100,400,400
+rotate:90
 images/effects/fire_06
-  rotate: false
-  xy: 1242, 863
-  size: 222, 197
-  orig: 400, 400
-  offset: 141, 98
-  index: -1
+bounds:2348,189,222,197
+offsets:141,98,400,400
+rotate:90
 images/effects/fire_07
-  rotate: false
-  xy: 957, 608
-  size: 184, 176
-  orig: 400, 400
-  offset: 179, 106
-  index: -1
+bounds:2405,3,184,176
+offsets:179,106,400,400
+rotate:90
 images/effects/fire_08
-  rotate: false
-  xy: 2, 2
-  size: 189, 169
-  orig: 400, 400
-  offset: 175, 102
-  index: -1
+bounds:1546,4,189,169
+offsets:175,102,400,400
 images/effects/fire_09
-  rotate: true
-  xy: 780, 534
-  size: 187, 175
-  orig: 400, 400
-  offset: 176, 98
-  index: -1
+bounds:2859,224,187,175
+offsets:176,98,400,400
+rotate:90
 images/effects/fire_10
-  rotate: false
-  xy: 294, 208
-  size: 164, 174
-  orig: 400, 400
-  offset: 176, 98
-  index: -1
+bounds:1911,9,164,174
+offsets:176,98,400,400
+rotate:90
 images/effects/pebbles_01
-  rotate: false
-  xy: 1215, 699
-  size: 236, 162
-  orig: 400, 400
-  offset: 110, 116
-  index: -1
+bounds:1700,175,236,162
+offsets:110,116,400,400
+rotate:90
 images/effects/pebbles_02
-  rotate: false
-  xy: 1215, 699
-  size: 236, 162
-  orig: 400, 400
-  offset: 110, 112
-  index: -1
+bounds:1864,175,236,162
+offsets:110,112,400,400
+rotate:90
 images/effects/pebbles_03
-  rotate: false
-  xy: 326, 704
-  size: 236, 170
-  orig: 400, 400
-  offset: 110, 108
-  index: -1
+bounds:1528,175,236,170
+offsets:110,108,400,400
+rotate:90
 images/effects/pebbles_04
-  rotate: false
-  xy: 325, 540
-  size: 236, 162
-  orig: 400, 400
-  offset: 110, 112
-  index: -1
+bounds:2028,175,236,162
+offsets:110,112,400,400
+rotate:90
 images/effects/pebbles_05
-  rotate: false
-  xy: 307, 384
-  size: 236, 154
-  orig: 400, 400
-  offset: 110, 120
-  index: -1
+bounds:2192,175,236,154
+offsets:110,120,400,400
+rotate:90
 images/effects/pebbles_06
-  rotate: false
-  xy: 577, 50
-  size: 182, 157
-  orig: 400, 400
-  offset: 181, 117
-  index: -1
+bounds:3031,40,182,157
+offsets:181,117,400,400
+rotate:90
 images/effects/pebbles_07
-  rotate: true
-  xy: 545, 390
-  size: 140, 188
-  orig: 400, 400
-  offset: 225, 101
-  index: -1
+bounds:2735,17,140,188
+offsets:225,101,400,400
 images/effects/pebbles_08
-  rotate: true
-  xy: 716, 723
-  size: 157, 222
-  orig: 400, 400
-  offset: 208, 94
-  index: -1
+bounds:2181,16,157,222
+offsets:208,94,400,400
+rotate:90
 images/effects/pebbles_09
-  rotate: true
-  xy: 969, 898
-  size: 162, 271
-  orig: 400, 400
-  offset: 202, 62
-  index: -1
+bounds:1137,140,162,271
+offsets:202,62,400,400
 images/effects/pebbles_10
-  rotate: false
-  xy: 2, 173
-  size: 175, 295
-  orig: 400, 400
-  offset: 188, 43
-  index: -1
+bounds:960,116,175,295
+offsets:188,43,400,400

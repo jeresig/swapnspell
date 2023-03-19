@@ -1,13 +1,6 @@
-
 world_backgrounds.png
-size: 2048,4096
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
+size:1084,2524
+filter:Linear,Linear
+pma:true
 images/world/placeholder
-  rotate: false
-  xy: 2, 2
-  size: 1080, 2520
-  orig: 1080, 2520
-  offset: 0, 0
-  index: -1
+bounds:2,2,1080,2520

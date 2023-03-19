@@ -1,7 +1,7 @@
 {
 "skeleton": {
-	"hash": "fiIVBamqcgdd8fi+lMS1WpLX4Rc",
-	"spine": "3.8.99",
+	"hash": "cO1kv2jL1SE",
+	"spine": "4.1.19",
 	"x": -64,
 	"y": -24.31,
 	"width": 128,
@@ -241,14 +241,20 @@
 		"bones": {
 			"enemy_root": {
 				"translate": [
-					{ "curve": 0.25, "c3": 0.75 },
+					{
+						"curve": [ 0.25, 0, 0.75, -125, 0.25, 0, 0.75, 0 ]
+					},
 					{ "time": 1, "x": -125, "curve": "stepped" },
 					{ "time": 1.0667, "x": -123.39, "y": -1.61, "curve": "stepped" },
 					{ "time": 1.1333, "x": -127.25, "y": 0.64, "curve": "stepped" },
 					{ "time": 1.2, "x": -123.07, "y": -0.32, "curve": "stepped" },
 					{ "time": 1.2667, "x": -126.6, "y": -2.57, "curve": "stepped" },
 					{ "time": 1.3333, "x": -125, "curve": "stepped" },
-					{ "time": 2, "x": -125, "curve": 0.25, "c3": 0.75 },
+					{
+						"time": 2,
+						"x": -125,
+						"curve": [ 2.25, -125, 2.75, 0, 2.25, 0, 2.75, 0 ]
+					},
 					{ "time": 3 }
 				],
 				"scale": [

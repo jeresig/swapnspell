@@ -1,6 +1,6 @@
 import * as PIXI from "pixi.js";
 import {Spine, SpineDebugRenderer} from 'pixi-spine';
-import {Skin} from '@pixi-spine/runtime-3.8';
+import {Skin} from '@pixi-spine/runtime-4.1';
 
 import {MonsterType} from "./types";
 
